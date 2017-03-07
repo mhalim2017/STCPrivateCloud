@@ -1,0 +1,92 @@
+<!-- Extend Layout -->
+{% extends "layouts/default.html" %}
+
+<!-- Page Content -->
+{% block content %}
+
+<!-- Breadcrumb -->
+<div class="container">
+    <ol class="breadcrumb">
+        <li>
+            <a href="index.html"><img src="images/bc_home.png" alt=""></a>
+        </li>
+        <li><a href="categories.html">Desktop Computers & Mobile Devices</a></li>
+        <li><a href="category.html">Office Automation Provision</a></li>
+        <li class="active">Personal Assets Provision</li>
+    </ol>
+</div>
+
+<!-- Category -->
+<div id="container-wrapper" class="container">
+    
+    <div class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        Success: You have added to your <a href="cart.html">cart</a>!
+    </div>
+    <div class="go-back">
+        <a href="category.html"></a>
+    </div>
+
+    <!-- Categories -->
+    <div class="categories category-items">
+        <div class="row">
+
+            <!-- Category Info -->
+            <div class="col-md-3 hidden-xs hidden-sm info-block">
+                <div class="block border-primary category-box">
+                    <div class="title-blcok">
+                        <div class="img">
+                            <img src="images/icons/Personal_Assets_Provision.svg" alt="">
+                        </div>
+                        <h1 class="alt">Personal Assets Provision</h1>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Items -->
+            <div class="col-xs-12 col-md-9">
+                <div class="block product-details clearfix">
+                    <div class="title">
+                        <h1>Personal Assets Provision</h1>
+                        <small>Windows 2012 R2 VM Server Single Machine</small>
+                    </div>
+                    <p>A single machine VM blueprint deploying a Windows 2012 R2 machine which is joined to the Active Directory domain. The vM willbe deployed in Production or est/Development environment based on your selection</p>
+                    <a href="#" class="btn btn-primary pull-right cart-add" data-toggle="modal" data-target="#myModal">Add to Cart</a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <form action="vm.html" id="activate_checkout">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label for="text_input">Input</label>
+                                            <input type="text" class="form-control" id="text_input" placeholder="Input">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="text_input2">Input 2</label>
+                                            <input type="text" class="form-control" id="text_input2" placeholder="Input 2">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-primary pull-right cart-checkout" disabled>Checkout</button>
+                                        <a href="product-add.html" class="btn btn-primary pull-right cart-add">Add to Cart</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Categories -->
+
+</div>
+
+{% endblock %}
+<!-- End Page Content -->

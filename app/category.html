@@ -1,0 +1,97 @@
+<!-- Extend Layout -->
+{% extends "layouts/default.html" %}
+
+<!-- Page Content -->
+{% block content %}
+
+<!-- Breadcrumb -->
+<div class="container">
+    <ol class="breadcrumb">
+        <li>
+            <a href="index.html"><img src="images/bc_home.png" alt=""></a>
+        </li>
+        <li><a href="categories.html">Desktop Computers & Mobile Devices</a></li>
+        <li class="active">Office Automation Provision</li>
+    </ol>
+</div>
+
+<!-- Category -->
+<div id="container-wrapper" class="container">
+
+    <div class="go-back">
+        <a href="categories.html"></a>
+    </div>
+
+    <!-- Categories -->
+    <div class="categories category-items">
+        <div class="row">
+
+            <!-- Category Info -->
+            <div class="col-md-3 hidden-xs hidden-sm info-block">
+                <div class="block border-primary category-box">
+                    <div class="title-blcok">
+                        <div class="img">
+                            <img src="images/icons/Office_Automation_Provision.svg" alt="">
+                        </div>
+                        <h1>Office Automation Provision</h1>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Items -->
+            <div class="col-xs-12 col-md-9">
+                <div class="row row-eq-height">
+                    <div class="col-xs-6 col-sm-3">
+                        <!-- box -->
+                        <div class="block border-yellow product-box">
+                            <div class="img">
+                                <a href="product.html"><img src="images/icons/Personal_Assets_Provision.svg" alt=""></a>
+                            </div>
+                            <h2><a href="product.html">Personal Assets Provision</a></h2>
+                        </div>
+                        <!-- end box -->
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3">
+                        <!-- box -->
+                        <div class="block border-yellow product-box">
+                            <div class="img">
+                                <a href="product.html"><img src="images/icons/Adminstrative_Assets_Provision.svg" alt=""></a>
+                            </div>
+                            <h2><a href="product.html">Adminstrative Assets Provision</a></h2>
+                        </div>
+                        <!-- end box -->
+                    </div>
+                    
+                    <div class="col-xs-6 col-sm-3">
+                        <!-- box -->
+                        <div class="block border-yellow product-box">
+                            <div class="img">
+                                <a href="product.html"><img src="images/icons/Customers_Sales_Offices_Assets_Provision.svg" alt=""></a>
+                            </div>
+                            <h2><a href="product.html">Customers Sales Offices Assets Provision</a></h2>
+                        </div>
+                        <!-- end box -->
+                    </div>
+                    
+                    <div class="col-xs-6 col-sm-3">
+                        <!-- box -->
+                        <div class="block border-yellow product-box">
+                            <div class="img">
+                                <a href="product.html"><img src="images/icons/Customers_Call_Centers_Assets_Provision.svg" alt=""></a>
+                            </div>
+                            <h2><a href="product.html">Customers Call Centers Assets Provision</a></h2>
+                        </div>
+                        <!-- end box -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Categories -->
+
+</div>
+
+{% endblock %}
+<!-- End Page Content -->

@@ -1,0 +1,34 @@
+// bower:css
+@import "bower_components/PACE/themes/purple/pace-theme-flash";
+// endbower
+
+// customize
+.pace .pace-progress {
+	background: #6f3974;
+}
+.pace .pace-progress-inner {
+	box-shadow: 0 0 10px #6f3974, 0 0 5px #6f3974;
+}
+.pace .pace-activity {
+	border-top-color: #6f3974;
+	border-left-color: #6f3974;
+}
+
+
+/* Hide page until pace loading */
+body > :not(.pace),body:before,body:after {
+	-webkit-transition: opacity .4s ease-in-out;
+	-moz-transition: opacity .4s ease-in-out;
+	-o-transition: opacity .4s ease-in-out;
+	-ms-transition: opacity .4s ease-in-out;
+	transition: opacity .4s ease-in-out;
+}
+body:not(.pace-done) > :not(.pace),body:not(.pace-done):before,body:not(.pace-done):after {
+	opacity: 0;
+}
+body:not(.pace-done) > :not(.pace) nav {
+	opacity: 0;
+}
+.pace-done .pace {
+	display: none !important;
+}

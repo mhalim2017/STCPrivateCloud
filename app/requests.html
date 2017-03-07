@@ -1,0 +1,69 @@
+<!-- Extend Layout -->
+{% extends "layouts/default.html" %}
+
+<!-- Page Content -->
+{% block content %}
+
+<!-- Breadcrumb -->
+<div class="container">
+    <ol class="breadcrumb">
+        <li>
+            <a href="index.html"><img src="images/bc_home.png" alt=""></a>
+        </li>
+        <li class="active">Requests</li>
+    </ol>
+</div>
+
+<!-- Container -->
+<div class="container">
+    <div class="full-width requests-page clearfix">
+        
+        <!-- Title -->
+        <h1>Requests</h1>
+        
+        <div class="table-responsive-stc">
+            <table class="table table-striped table-hover table-stc">
+                <thead>
+                    <tr>
+                        <th scope="col">Service Catalog Item</th>
+                        <th scope="col">Number</th>
+                        <th scope="col">Service Description</th>
+                        <th scope="col">Stage</th>
+                        <th scope="col">Created</th>
+                        <th scope="col">Updated</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="clickable" data-href="requests_details.html">
+                        <td data-label="Service Catalog Item">Windows 2012 R3 VM</td>
+                        <td data-label="Number">RITM0000302</td>
+                        <td data-label="Service Description">Windows 2012 R2 Server Single Machine</td>
+                        <td data-label="Stage">Pending Direct Manager Approval</td>
+                        <td data-label="Created">2m ago</td>
+                        <td data-label="Updated">2m ago</td>
+                    </tr>
+                    <tr class="clickable" data-href="requests_details.html">
+                        <td data-label="Service Catalog Item">Windows 2012 R3 VM</td>
+                        <td data-label="Number">RITM0000302</td>
+                        <td data-label="Service Description">Windows 2012 R2 Server Single Machine</td>
+                        <td data-label="Stage">Pending Direct Manager Approval</td>
+                        <td data-label="Created">2m ago</td>
+                        <td data-label="Updated">2m ago</td>
+                    </tr>
+                    <tr class="clickable" data-href="requests_details.html">
+                        <td data-label="Service Catalog Item">Windows 2012 R3 VM</td>
+                        <td data-label="Number">RITM0000302</td>
+                        <td data-label="Service Description">Windows 2012 R2 Server Single Machine</td>
+                        <td data-label="Stage">Pending Direct Manager Approval</td>
+                        <td data-label="Created">2m ago</td>
+                        <td data-label="Updated">2m ago</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
+<!-- End Page Content -->

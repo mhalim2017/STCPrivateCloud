@@ -1,0 +1,212 @@
+<!-- Extend Layout -->
+{% extends "layouts/default.html" %}
+
+<!-- Page Content -->
+{% block content %}
+
+<!-- Breadcrumb -->
+<div class="container">
+    <ol class="breadcrumb">
+        <li>
+            <a href="index.html"><img src="images/bc_home.png" alt=""></a>
+        </li>
+        <li><a href="cart.html">My Cart</a></li>
+        <li class="active">Request details - Windows 2012 R2 VM</li>
+    </ol>
+</div>
+
+<!-- Container -->
+<div class="container">
+    <div class="full-width request-details-page clearfix">
+        
+        <!-- Title -->
+        <div class="title">
+            <h1>Request details</h1>
+            <small>Windows 2012 R2 VM</small>
+        </div>
+        
+        <form class="stc-forms" action="cart.html">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                        <label for="owner">Owner</label>
+                        <select id="owner" class="form-control">
+                            <option>Mohamed A. Abduelhlim</option>
+                            <option>Ahmed A. Abduelhlim</option>
+                            <option>Ashraf A. Abduelhlim</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                        <label for="reasons">Reasons</label>
+                        <textarea id="reasons" class="form-control" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                        <label for="select_option">Select Option</label>
+                        <select id="select_option" class="form-control">
+                            <option>New VM</option>
+                            <option>Old VM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" class="form-control" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                        <label for="select_environment">Select Environment</label>
+                        <select id="select_environment" class="form-control">
+                            <option>TEST/DEV</option>
+                            <option>Production</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                        <label for="application_name">Application Name</label>
+                        <input id="application_name" type="text" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                        <label for="server_type">Server Type</label>
+                        <select id="server_type" class="form-control">
+                            <option>Applcation</option>
+                            <option>Operating System</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                        <label for="machines">Machines</label>
+                        <select id="machines" class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                        <label for="vcpuss">vCPUs</label>
+                        <select id="vcpuss" class="form-control" disabled>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                        <label for="additional_storage_request">Additional Storage Request</label>
+                        <select id="additional_storage_request" class="form-control">
+                            <option>Yes</option>
+                            <option selected>No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                        <label for="memory">Memory (MB)</label>
+                        <select id="memory" class="form-control">
+                            <option>1024</option>
+                            <option selected>2048</option>
+                            <option>4096</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                        <label for="expiry_date">Expiry Date</label>
+                        <select id="expiry_date" class="form-control">
+                            <option>-None-</option>
+                            <option>in a month</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                        <label for="storage">Storage (GB)</label>
+                        <select id="storage" class="form-control">
+                            <option>100</option>
+                            <option>200</option>
+                            <option>300</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                        <label for="backup_level">Backup Level</label>
+                        <select id="backup_level" class="form-control">
+                            <option>No Backup</option>
+                            <option>Weekly</option>
+                            <option>Monthly</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                        <label for="application_owner">Application Owner</label>
+                        <select id="application_owner" class="form-control">
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                        <label for="technical_expert">Technical Expert (Subject Matter Expert)</label>
+                        <select id="technical_expert" class="form-control">
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                        <label for="system_admin">System Admin / Application Admin</label>
+                        <select id="system_admin" class="form-control">
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    <div class="form-group attachment-group">
+                        <label for="add_attachments">Add attachments</label>
+                        <input type="file" id="add_attachments" multiple>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-default btn-submit">Save</button>
+        </form>
+
+    </div>
+</div>
+
+{% endblock %}
+<!-- End Page Content -->

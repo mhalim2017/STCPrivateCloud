@@ -1,0 +1,88 @@
+<!-- Extend Layout -->
+{% extends "layouts/default.html" %}
+
+<!-- Page Content -->
+{% block content %}
+
+<!-- Breadcrumb -->
+<div class="container">
+    <ol class="breadcrumb">
+        <li>
+            <a href="index.html"><img src="images/bc_home.png" alt=""></a>
+        </li>
+        <li class="active">My Virtual Machines</li>
+    </ol>
+</div>
+
+<!-- Container -->
+<div class="container">
+    <div class="full-width vm-page clearfix">
+        
+        <!-- Title -->
+        <h1>My Virtual Machines</h1>
+        
+        <!-- Tools -->
+        <div class="tools clearfix">
+            <form class="search-form">
+                <input type="text" class="search-input" placeholder="Search">
+                <button type="submit" class="submit-search">
+                    <img src="images/icons/search.svg" alt="">
+                </button>
+            </form>
+            <a href="#" class="btn btn-default btn-export">Export</a>
+        </div>
+        <div class="clearfix"></div>
+        
+        <div class="table-responsive-stc">
+            <table class="table table-striped table-hover table-stc">
+                <thead>
+                    <tr>
+                        <th scope="col">Application/System Name</th>
+                        <th scope="col">Requestor</th>
+                        <th scope="col">CPUs</th>
+                        <th scope="col">Memory (GB)</th>
+                        <th scope="col">Disks</th>
+                        <th scope="col">Environment</th>
+                        <th scope="col">Host Name</th>
+                        <th scope="col">IP</th>
+                        <th scope="col">Serial number</th>
+                        <th scope="col">State</th>
+                        <th scope="col">Request</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="clickable" data-href="vm_details.html">
+                        <td data-label="Application/System Name">NoApp (RHEL-v6.5-64Bit-Jv3/ECINAPPTL0667/10.23.50.3)</td>
+                        <td data-label="Requestor">Mohamed A.Abdelhalim</td>
+                        <td data-label="CPUs">1</td>
+                        <td data-label="Memory (GB)">2</td>
+                        <td data-label="Disks">1</td>
+                        <td data-label="Environment">TEST/DEV</td>
+                        <td data-label="Host Name">ECINSAPPT667</td>
+                        <td data-label="IP">10.23.503</td>
+                        <td data-label="Serial number">500fa7b-48e3-54c3</td>
+                        <td data-label="State">On</td>
+                        <td data-label="Request">TEST0004</td>
+                    </tr>
+                    <tr class="clickable" data-href="vm_details.html">
+                        <td data-label="Application/System Name">NoApp (RHEL-v6.5-64Bit-Jv3/ECINAPPTL0667/10.23.50.3)</td>
+                        <td data-label="Requestor">Mohamed A.Abdelhalim</td>
+                        <td data-label="CPUs">1</td>
+                        <td data-label="Memory (GB)">2</td>
+                        <td data-label="Disks">1</td>
+                        <td data-label="Environment">TEST/DEV</td>
+                        <td data-label="Host Name">ECINSAPPT667</td>
+                        <td data-label="IP">10.23.503</td>
+                        <td data-label="Serial number">500fa7b-48e3-54c3</td>
+                        <td data-label="State">On</td>
+                        <td data-label="Request">TEST0004</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
+<!-- End Page Content -->

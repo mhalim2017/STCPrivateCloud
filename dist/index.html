@@ -1,0 +1,513 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>STC</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="styles/early.css">
+
+    <link rel="stylesheet" href="styles/vendor.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <script src="scripts/vendor/early.js"></script>
+</head>
+<body>
+<!--[if lt IE 10]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<nav class="navbar stc-navbar">
+	<div class="container">
+
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+			<button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+				<span class="hamb-top"></span>
+				<span class="hamb-middle"></span>
+				<span class="hamb-bottom"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">
+				<img src="images/logo.png" alt="">
+				<span>Cloud Services Portal</span>
+			</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse">
+	    	<ul class="nav navbar-nav" id="main-menu">
+	            <li>
+	            	<a href="#">
+	            		<img src="images/icons/service.svg" alt="">
+	            		Service
+	            	</a>
+	            </li>
+	            <li>
+	            	<a href="#">
+	            		<img src="images/icons/support.svg" alt="">
+	            		Support
+	            	</a>
+	            </li>
+	            <li>
+	            	<a href="#">
+	            		<img src="images/icons/profile.svg" alt="">
+	            		Profile
+	            	</a>
+	            </li>
+	    	</ul>
+	    	<form id="navbar-search-form" class="navbar-search-form navbar-left">
+		        <input type="text" class="search-input" placeholder="Search Word..">
+		        <button type="submit" class="submit-search">
+					<img src="images/icons/search.svg" alt="">
+		        </button>
+	    	</form>
+	    	<ul class="nav navbar-nav navbar-right navbar-cart" id="cart-menu">
+		        <li class="dropdown">
+					<a href="cart.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+						<span class="icon">
+							<img src="images/icons/cart_1.svg" alt="">
+							<img class="alt" src="images/icons/cart_2.svg" alt="">
+						</span>
+						<span class="cart">
+							<span>Cart</span>
+							<span class="small">2 item(s)</span>
+						</span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="cart.html">
+								<img src="images/test_2.png" alt="">
+								Redhat 6.5 VM
+								<img class="arrow" src="images/icons/arrow_right.svg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="cart.html">
+								<img src="images/test_2.png" alt="">
+								Redhat 6.5 VM
+								<img class="arrow" src="images/icons/arrow_right.svg" alt="">
+							</a>
+						</li>
+						<li><a href="cart.html" class="view-cart">View Cart</a></li>
+					</ul>
+		        </li>
+	    	</ul>
+	    </div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="overlay"></div>
+  
+<!-- Sidebar Menu -->
+<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+    <ul class="nav sidebar-nav">
+		<li class="no-link sidebar-brand"><a href="index.html">STC</a></li>
+		<li class="no-link dropdown-header main-menu visible-xs">Main Menu</li>
+		<li class="no-link dropdown-header cart-menu visible-xs">Cart</li>
+		<li class="no-link dropdown-header other-menu visible-xs">Other</li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">About</a></li>
+    </ul>
+</nav>
+<!-- End Sidebar Menu --> 
+
+
+
+
+<!-- Slider -->
+<section class="slider">
+	<div class="slider-carousel owl-carousel">
+    	
+			<div>
+				<img class="big" src="images/slider_1.png" alt="">
+				<div class="data">
+		    		<a href="#video_1" data-lity></a>
+				</div>
+			</div>
+	    
+			<div>
+				<img class="big" src="images/slider_2.png" alt="">
+				<div class="data">
+		    		<a href="#video_2" data-lity></a>
+				</div>
+			</div>
+	    
+			<div>
+				<img class="big" src="images/slider_3.png" alt="">
+				<div class="data">
+		    		<a href="#video_3" data-lity></a>
+				</div>
+			</div>
+	    
+	</div>
+</section>
+
+<div id="video_1" style="background:#fff" class="lity-hide">
+	<video width="600" height="338" controls>
+		<source src="images/videos/1.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+</div>
+<div id="video_2" style="background:#fff" class="lity-hide">
+	<video width="600" height="338" controls>
+		<source src="images/videos/2.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+</div>
+<div id="video_3" style="background:#fff" class="lity-hide">
+	<video width="600" height="338" controls>
+		<source src="images/videos/3.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+</div>
+
+
+<!-- Contenet -->
+<div id="container-wrapper" class="container">
+    <div class="row">
+
+        <!-- side container -->
+        <div class="col-xs-12 col-sm-7 col-md-9 side-container">
+
+            <!-- welcome block -->
+            <div class="alert block welcome-block fade in">
+                <h4 class="title">Why STC IT Private Cloud?</h4>
+                <div class="block-body">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electroni typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like</p>
+                </div>
+                <div class="dismiss">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <img src="images/icons/close.svg" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <!-- Categories -->
+            <div class="categories">
+                <div class="row row-eq-height">
+                        
+                        <!-- Category -->
+                        <div class="col-xs-6 col-md-3">
+                            <div class="block border-primary category-box">
+                                <div class="title-blcok">
+                                    <div class="img">
+                                        <a href="categories.html"><img src="images/icons/coud_services_and_infrastructures.svg" alt=""></a>
+                                    </div>
+                                    <h4><a href="categories.html">Cloud Services & Infrastructures</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Category -->
+                        
+                        <!-- Category -->
+                        <div class="col-xs-6 col-md-3">
+                            <div class="block border-primary category-box">
+                                <div class="title-blcok">
+                                    <div class="img">
+                                        <a href="categories.html"><img src="images/icons/desktop_computers_and_mobile_devices.svg" alt=""></a>
+                                    </div>
+                                    <h4><a href="categories.html">Desktop Computers & Mobile Devices</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Category -->
+                        
+                        
+                        <!-- Category -->
+                        <div class="col-xs-6 col-md-3">
+                            <div class="block border-primary category-box no-title">
+                                <div class="title-blcok">
+                                    <div class="img">
+                                        <a href="category.html"><img src="images/icons/qm.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Category -->
+                        
+                        <!-- Category -->
+                        <div class="col-xs-6 col-md-3">
+                            <div class="block border-primary category-box no-title">
+                                <div class="title-blcok">
+                                    <div class="img">
+                                        <a href="category.html"><img src="images/icons/qm.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Category -->
+                        
+                        <!-- Category -->
+                        <div class="col-xs-6 col-md-3">
+                            <div class="block border-primary category-box no-title">
+                                <div class="title-blcok">
+                                    <div class="img">
+                                        <a href="category.html"><img src="images/icons/qm.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Category -->
+                        
+                        <!-- Category -->
+                        <div class="col-xs-6 col-md-3">
+                            <div class="block border-primary category-box no-title">
+                                <div class="title-blcok">
+                                    <div class="img">
+                                        <a href="category.html"><img src="images/icons/qm.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Category -->
+                        
+                        <!-- Category -->
+                        <div class="col-xs-6 col-md-3">
+                            <div class="block border-primary category-box no-title">
+                                <div class="title-blcok">
+                                    <div class="img">
+                                        <a href="category.html"><img src="images/icons/qm.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Category -->
+                        
+                        <!-- Category -->
+                        <div class="col-xs-6 col-md-3">
+                            <div class="block border-primary category-box no-title">
+                                <div class="title-blcok">
+                                    <div class="img">
+                                        <a href="category.html"><img src="images/icons/qm.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Category -->
+                        
+                        <!-- Category -->
+                        <div class="col-xs-6 col-md-3">
+                            <div class="block border-primary category-box no-title">
+                                <div class="title-blcok">
+                                    <div class="img">
+                                        <a href="category.html"><img src="images/icons/qm.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Category -->
+                        
+                        <!-- Category -->
+                        <div class="col-xs-6 col-md-3">
+                            <div class="block border-primary category-box no-title">
+                                <div class="title-blcok">
+                                    <div class="img">
+                                        <a href="category.html"><img src="images/icons/qm.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Category -->
+                        
+                        <!-- Category -->
+                        <div class="col-xs-6 col-md-3">
+                            <div class="block border-primary category-box no-title">
+                                <div class="title-blcok">
+                                    <div class="img">
+                                        <a href="category.html"><img src="images/icons/qm.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Category -->
+                        
+                        <!-- Category -->
+                        <div class="col-xs-6 col-md-3">
+                            <div class="block border-primary category-box no-title">
+                                <div class="title-blcok">
+                                    <div class="img">
+                                        <a href="category.html"><img src="images/icons/qm.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Category -->
+                        
+
+                </div>
+            </div>
+            <!-- End Categories -->
+
+        </div>
+        <!-- end side container -->
+
+        <!-- Sidebar -->
+        <div class="col-xs-12 col-sm-5 col-md-3 sidebar">
+
+            <!-- information block -->
+            <div class="block border-primary information-block">
+                <div class="block-body">
+                    <div class="thumb">
+                        <a href="#"><img src="images/test_1.png" alt=""></a>
+                    </div>
+                    <div class="user-name"><a href="#">Abdullah H. H Alotaibi</a></div>
+                    <div class="desc">
+                        Inf/ Automation & Provisiong Services Section Manager
+                    </div>
+                    <div class="desc alt">
+                        Infrastructure Design and Implementation
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="icon">
+                                <img src="images/icons/requests.svg" alt="">
+                                <span class="badge">2</span>
+                            </div>
+                            <a href="requests.html">Requests</a>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="icon">
+                                <img src="images/icons/approvals.svg" alt="">
+                                <span class="badge">2</span>
+                            </div>
+                            <a href="approvals.html">Approvals</a>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="icon">
+                                <img src="images/icons/virtual_machines.svg" alt="">
+                                <span class="badge">2</span>
+                            </div>
+                            <a href="vm.html">Virtual Machines</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end information block -->
+            
+            <!-- requestfeed block -->
+            <div class="block border-alt requestfeed-block">
+                <h4 class="title alt">Request Feed</h4>
+                <div class="block-body">
+
+                    <!-- request tabs -->
+                    <div class="request-tabs">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#pending" aria-controls="pending" role="tab" data-toggle="tab">    Pending
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#sent" aria-controls="sent" role="tab" data-toggle="tab">
+                                    Sent
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#processed" aria-controls="processed" role="tab" data-toggle="tab">
+                                    Processed
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="pending">
+                                <div class="request-box">
+                                    <span class="id">#2921</span>
+                                    <span class="name">Service Name</span>
+                                    <span class="date">2016/12/20 12:43pm</span>
+                                    <span class="go-link">
+                                        <img src="images/icons/arrow_right.svg" alt="">
+                                    </span>
+                                    <a href="requests_details.html" class="box-link"></a>
+                                </div>
+                                <div class="request-box">
+                                    <span class="id">#2921</span>
+                                    <span class="name">Service Name</span>
+                                    <span class="date">2016/12/20 12:43pm</span>
+                                    <span class="go-link">
+                                        <img src="images/icons/arrow_right.svg" alt="">
+                                    </span>
+                                    <a href="requests_details.html" class="box-link"></a>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="sent">
+                                <div class="request-box">
+                                    <span class="id">#2921</span>
+                                    <span class="name">Service Name</span>
+                                    <span class="date">2016/12/20 12:43pm</span>
+                                    <span class="go-link">
+                                        <img src="images/icons/arrow_right.svg" alt="">
+                                    </span>
+                                    <a href="requests_details.html" class="box-link"></a>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="processed">
+                                <div class="request-box">
+                                    <span class="id">#2921</span>
+                                    <span class="name">Service Name</span>
+                                    <span class="date">2016/12/20 12:43pm</span>
+                                    <span class="go-link">
+                                        <img src="images/icons/arrow_right.svg" alt="">
+                                    </span>
+                                    <a href="requests_details.html" class="box-link"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end request tabs -->
+
+                    <div class="view-all">
+                        <a href="#">View All</a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- end requestfeed block -->
+
+        </div>
+        <!-- End Sidebar -->
+
+    </div>
+</div>
+
+
+
+<footer>
+	<div class="container">
+		© 2017 STC | Cloud Services Portal. All rights reserved
+	</div>
+</footer>
+
+</div>
+<!-- End Wrapper -->
+    
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='https://www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+
+<script src="scripts/vendor.js"></script>
+
+<script src="scripts/plugins.js"></script>
+
+<script src="scripts/main.js"></script>
+
+</body>
+</html>

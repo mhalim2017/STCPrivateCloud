@@ -1,0 +1,46 @@
+<!-- Extend Layout -->
+{% extends "layouts/default.html" %}
+
+<!-- Page Content -->
+{% block content %}
+
+<!-- Breadcrumb -->
+<div class="container">
+    <ol class="breadcrumb">
+        <li>
+            <a href="index.html"><img src="images/bc_home.png" alt=""></a>
+        </li>
+        <li class="active">Desktop Computers & Mobile Devices</li>
+    </ol>
+</div>
+
+<!-- Slider -->
+{% include "partials/slider.html" %}
+
+<!-- Contenet -->
+<div id="container-wrapper" class="container">
+
+    <!-- Categories -->
+    <div class="categories categories-list">
+        <div class="title">Desktop Computers & Mobile Devices</div>
+        <div class="row row-eq-height">
+            {% for n in [{img:'Office_Automation_Provision', title:'Office Automation Provision'}, {img:'Assets_Movement_Request', title:'Assets Movement Request'}, {img:'Assets_Objection_Request', title:'Assets Objection Request'}, {img:'Assets_Disposal', title:'Assets Disposal'}, {img:'Office_Automation_Provision', title:'Office Automation Provision'}, {img:'Assets_Movement_Request', title:'Assets Movement Request'}, {img:'Assets_Objection_Request', title:'Assets Objection Request'}, {img:'Assets_Disposal', title:'Assets Disposal'}] %}
+                <div class="col-xs-6 col-sm-4 col-md-5ths">
+                    <div class="block border-primary category-box">
+                        <div class="title-blcok">
+                            <div class="img">
+                                <a href="category.html"><img src="images/icons/{{ n.img }}.svg" alt=""></a>
+                            </div>
+                            <h4><a href="category.html">{{ n.title }}</a></h4>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <!-- End Categories -->
+
+</div>
+
+{% endblock %}
+<!-- End Page Content -->

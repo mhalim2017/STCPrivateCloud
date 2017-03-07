@@ -1,0 +1,93 @@
+/**
+ * [breakpoint description]
+ * @param  {[type]} $min: 0             [description]
+ * @param  {[type]} $max: 0             [description]
+ * @return {[type]}       [description]
+ */
+@mixin breakpoint($min: 0, $max: 0) {
+    // check the type of the first param
+    $type: type-of($min);
+ 
+    @if $type == string {
+
+        $class: $min;
+    
+        // Only
+        @if $class == only-xs {
+            @media (min-width: 0) and (max-width: 767px) { @content; }
+        }
+
+        @else if $class == only-sm {
+            @media (min-width: 768px) and (max-width: 991px) { @content; }
+        }
+
+        @else if $class == only-md {
+            @media (min-width: 992px) and (max-width: 1199px) { @content; }
+        }
+        // same as lg
+        @else if $class == only-lg {
+            @media (min-width: 1200px) { @content; }
+        }
+
+
+        // Mobile First
+        @else if $class == xs {
+            @media (min-width: 0) { @content; }
+        }
+
+        @else if $class == sm {
+            @media (min-width: 768px) { @content; }
+        }
+
+        @else if $class == md {
+            @media (min-width: 992px) { @content; }
+        }
+
+        @else if $class == lg {
+            @media (min-width: 1200px) { @content; }
+        }
+
+
+
+
+        // Desktop First
+        @else if $class == rxs {
+            @media (max-width: 767px) { @content; }
+        }
+
+        @else if $class == rsm {
+            @media (max-width: 991px) { @content; }
+        }
+
+        @else if $class == rmd {
+            @media (max-width: 1199px) { @content; }
+        }
+
+        @else if $class == rlg {
+            @media (max-width: 10000px) { @content; }
+        }
+
+
+    } // end if type == string
+
+    
+    // if type == number
+    @else if $type == number {
+        $query: "all" !default;
+
+        @if $min != 0 and $max != 0 { 
+            $query: "(min-width: #{$min}) and (max-width: #{$max})"; 
+        }
+
+        @else if $min != 0 and $max == 0 { 
+            $query: "(min-width: #{$min})"; 
+        }
+
+        @else if $min == 0 and $max != 0 { 
+            $query: "(max-width: #{$max})"; 
+        }
+
+        @media #{$query} { @content; }
+    }
+
+}
