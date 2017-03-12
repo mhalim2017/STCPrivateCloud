@@ -68,6 +68,7 @@ a:hover, a:focus {
     padding: 0;
     border: none;
     border-radius: 0;
+    position: relative;
     &.border-primary {
         border-bottom: 4px solid #6f3974;
     }
@@ -76,6 +77,23 @@ a:hover, a:focus {
     }
     &.border-yellow {
         border-bottom: 4px solid #edab3b;
+    }
+    .block-info {
+        display: block;
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        cursor: pointer;
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .tooltip-inner {
+        max-width: none;
+        text-align: left;
+        width: 310px;
+        padding: 7px 12px;
     }
     .title {
         border-left: 3px solid #6f3974;
@@ -701,6 +719,18 @@ div.info-block {
                     outline: none;
                 }
             }
+            > h2 {
+                position: absolute;
+                width: 297px;
+                height: 40px;
+                text-align: center;
+                color: #d6417b;
+                font-size: 19px;
+                margin: 0;
+                right: 0;
+                bottom: 29px;
+                line-height: 36px;
+            }
             .title-blcok {
                 float: left;
                 margin-left: 5px;
@@ -1079,9 +1109,9 @@ div.info-block {
             margin-bottom: 15px;
             text-align: center;
             .img {
-                height: 90px;
+                height: 85px;
                 display: block;
-                margin-top: 10px;
+                margin-top: 15px;
                 margin-bottom: 10px;
                 img {
                     display: block;
@@ -1234,8 +1264,9 @@ footer {
 */
 .product-box {
     text-align: center;
-    padding: 15px 0;
+    padding: 15px 0 45px;
     height: calc(100% - 30px);
+    position: relative;
     .img {
         height: 120px;
         display: inline-block;
@@ -1269,6 +1300,41 @@ footer {
             a {
                 color: #d6417b;
             }
+        }
+    }
+    > .cart-add {
+        background-color: transparent;
+        border-color: #6f3974;
+        font-size: 18px;
+        padding: 7px 0;
+        text-align: center;
+        color: #6f3976;
+        @include radial-out();
+        position: absolute;
+        width: 94%;
+        left: 3%;
+        bottom: 5px;
+        display: block;
+        outline: none !important;
+        &:before {
+            background: #6f3974;
+        }
+    }
+    .modal {
+        text-align: left;
+        .cart-add, .cart-checkout {
+            border-color: #6f3974;
+            background-color: #6f3974;
+            font-size: 18px;
+            padding: 7px 30px;
+            &:hover {
+                border-color: #6f3974;
+                background-color: #6f3974;
+                opacity: 0.8;
+            }
+        }
+        .cart-checkout {
+            margin-left: 10px;
         }
     }
 }

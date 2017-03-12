@@ -41,49 +41,32 @@
             <!-- Items -->
             <div class="col-xs-12 col-md-9">
                 <div class="row row-eq-height">
-                    <div class="col-xs-6 col-sm-3">
-                        <!-- box -->
-                        <div class="block border-yellow product-box">
-                            <div class="img">
-                                <a href="product.html"><img src="images/icons/Personal_Assets_Provision.svg" alt=""></a>
-                            </div>
-                            <h2><a href="product.html">Personal Assets Provision</a></h2>
-                        </div>
-                        <!-- end box -->
-                    </div>
+                    
+                    {% for i in [{title: 'Personal Assets Provision', icon: 'Personal_Assets_Provision'}, {title: 'Adminstrative Assets Provision', icon: 'Adminstrative_Assets_Provision'}, {title: 'Customers Sales Offices Assets Provision', icon: 'Customers_Sales_Offices_Assets_Provision'}, {title: 'Customers Call Centers Assets Provision', icon: 'Customers_Call_Centers_Assets_Provision'}] %}
+                        <div class="col-xs-6 col-sm-3">
+                            <!-- box -->
+                            <div class="block border-yellow product-box">
+                                
+                                <!-- Info -->
+                                <span class="block-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+                                    <img src="images/icons/info.svg" alt="">
+                                </span>
 
-                    <div class="col-xs-6 col-sm-3">
-                        <!-- box -->
-                        <div class="block border-yellow product-box">
-                            <div class="img">
-                                <a href="product.html"><img src="images/icons/Adminstrative_Assets_Provision.svg" alt=""></a>
+                                <div class="img">
+                                    <img src="images/icons/{{ i.icon }}.svg" alt="">
+                                </div>
+                                <h2>{{ i.title }}</h2>
+
+                                <!-- Add to cart -->
+                                <a href="#" class="btn btn-primary cart-add" data-toggle="modal" data-target="#myModal">Add to Cart</a>
+                                <!-- Modal -->
+                                {% include "partials/_cart_modal.html" %}
+
                             </div>
-                            <h2><a href="product.html">Adminstrative Assets Provision</a></h2>
+                            <!-- end box -->
                         </div>
-                        <!-- end box -->
-                    </div>
-                    
-                    <div class="col-xs-6 col-sm-3">
-                        <!-- box -->
-                        <div class="block border-yellow product-box">
-                            <div class="img">
-                                <a href="product.html"><img src="images/icons/Customers_Sales_Offices_Assets_Provision.svg" alt=""></a>
-                            </div>
-                            <h2><a href="product.html">Customers Sales Offices Assets Provision</a></h2>
-                        </div>
-                        <!-- end box -->
-                    </div>
-                    
-                    <div class="col-xs-6 col-sm-3">
-                        <!-- box -->
-                        <div class="block border-yellow product-box">
-                            <div class="img">
-                                <a href="product.html"><img src="images/icons/Customers_Call_Centers_Assets_Provision.svg" alt=""></a>
-                            </div>
-                            <h2><a href="product.html">Customers Call Centers Assets Provision</a></h2>
-                        </div>
-                        <!-- end box -->
-                    </div>
+                    {% endfor %}
+
                 </div>
             </div>
 
