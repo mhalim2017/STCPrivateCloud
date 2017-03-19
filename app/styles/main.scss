@@ -192,6 +192,26 @@ div.info-block {
     }
     .form-group {
         margin-bottom: 20px;
+        .title-group {
+            position: relative;
+            .title-info {
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+                cursor: pointer;
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+            .tooltip-inner {
+                max-width: none;
+                text-align: left;
+                width: 310px;
+                padding: 7px 12px;
+            }
+        }
         label {
             font-size: 18px;
             font-weight: normal;
@@ -230,6 +250,11 @@ div.info-block {
             textarea {
                 min-height: 98px;
             }
+        }
+    }
+    &.checkout-form {
+        .form-group {
+            margin-bottom: 10px;
         }
     }
     .attachment-group {
@@ -1268,8 +1293,9 @@ footer {
     height: calc(100% - 30px);
     position: relative;
     .img {
-        height: 120px;
+        height: 80px;
         display: inline-block;
+        margin-bottom: 10px;
         img {
             display: block;
             height: 100%;
@@ -1322,6 +1348,31 @@ footer {
     }
     .modal {
         text-align: left;
+        .panel-heading {
+            padding: 0;
+            .panel-title {
+                a {
+                    display: block;
+                    padding: 10px 15px;
+                    span {
+                        float: right;
+                        &.glyphicon-chevron-right {
+                            display: none;
+                        }
+                    }
+                    &.collapsed {
+                        span {
+                            &.glyphicon-chevron-right {
+                                display: inline-block;
+                            }
+                            &.glyphicon-chevron-down {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .cart-add, .cart-checkout {
             border-color: #6f3974;
             background-color: #6f3974;

@@ -1,0 +1,52 @@
+<!-- Extend Layout -->
+{% extends "layouts/default.html" %}
+
+<!-- Page Content -->
+{% block content %}
+
+<!-- Breadcrumb -->
+<div class="container">
+    <ol class="breadcrumb">
+        <li>
+            <a href="index.html"><img src="images/bc_home.png" alt=""></a>
+        </li>
+        <li class="active">Cloud Services & Infrastructures</li>
+    </ol>
+</div>
+
+<!-- Slider -->
+{% include "partials/slider.html" %}
+
+<!-- Contenet -->
+<div id="container-wrapper" class="container">
+
+    <!-- Categories -->
+    <div class="categories categories-list">
+        <div class="title">Cloud Services & Infrastructures</div>
+        <div class="row row-eq-height">
+            {% for n in [{img:'Iaas', title:'IaaS'}, {img:'PaaS', title:'PaaS'}, {img:'BaaS', title:'BaaS'}, {img:'Addon_Services', title:'Add-on Services'}, {img:'Infrastructure_and_Network_Connectivity', title:'Infrastructure & Network Connectivity'}] %}
+                <div class="col-xs-6 col-sm-4 col-md-5ths">
+                    <div class="block border-primary category-box">
+                                
+                        <!-- Info -->
+                        <span class="block-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+                            <img src="images/icons/info.svg" alt="">
+                        </span>
+                        
+                        <div class="title-blcok">
+                            <div class="img">
+                                <a href="category2.html"><img src="images/icons/{{ n.img }}.svg" alt=""></a>
+                            </div>
+                            <h4><a href="category2.html">{{ n.title }}</a></h4>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <!-- End Categories -->
+
+</div>
+
+{% endblock %}
+<!-- End Page Content -->
