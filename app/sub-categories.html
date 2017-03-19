@@ -10,7 +10,8 @@
         <li>
             <a href="index.html"><img src="images/bc_home.png" alt=""></a>
         </li>
-        <li class="active">Desktop Computers & Mobile Devices</li>
+        <li><a href="categories.html">Desktop Computers & Mobile Devices</a></li>
+        <li class="active">Sub Categories</li>
     </ol>
 </div>
 
@@ -22,9 +23,9 @@
 
     <!-- Categories -->
     <div class="categories categories-list">
-        <div class="title">Desktop Computers & Mobile Devices</div>
+        <div class="title">Sub Categories</div>
         <div class="row row-eq-height">
-            {% for n in [{img:'Office_Automation_Provision', title:'Office Automation Provision', link:'category.html'}, {img:'Assets_Movement_Request', title:'Assets Movement Request', link:'category.html'}, {img:'Assets_Objection_Request', title:'Assets Objection Request', link:'category.html'}, {img:'Assets_Disposal', title:'Assets Disposal', link:'category.html'}, {img:'Office_Automation_Provision', title:'Sub Categories', link:'sub-categories.html'}] %}
+            {% for n in [{img:'Office_Automation_Provision', title:'Office Automation Provision'}, {img:'Assets_Movement_Request', title:'Assets Movement Request'}, {img:'Assets_Objection_Request', title:'Assets Objection Request'}, {img:'Assets_Disposal', title:'Assets Disposal'}] %}
                 <div class="col-xs-6 col-sm-4 col-md-5ths">
                     <div class="block border-primary category-box">
                                 
@@ -35,9 +36,9 @@
                         
                         <div class="title-blcok">
                             <div class="img">
-                                <a href="{{ n.link }}"><img src="images/icons/{{ n.img }}.svg" alt=""></a>
+                                <a href="category.html"><img src="images/icons/{{ n.img }}.svg" alt=""></a>
                             </div>
-                            <h4><a href="{{ n.link }}">{{ n.title }}</a></h4>
+                            <h4><a href="category.html">{{ n.title }}</a></h4>
                         </div>
                     </div>
                 </div>

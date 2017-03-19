@@ -52,7 +52,7 @@ $('#navbar-search-form .submit-search').on('click', function(e){
 });
 
 // slider
-var slider_carousel = $(".slider-carousel").owlCarousel({
+var slider_carousel = {
     center: true,
     items:2,
     loop:true,
@@ -65,6 +65,9 @@ var slider_carousel = $(".slider-carousel").owlCarousel({
             items:2
         }
     }
+};
+Pace.once('hide', function(){
+    $(".slider-carousel").owlCarousel(slider_carousel);
 });
 
 // tooltip
