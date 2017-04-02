@@ -11,7 +11,7 @@
             <a href="index.html"><img src="images/bc_home.png" alt=""></a>
         </li>
         <li><a href="categories.html">Desktop Computers & Mobile Devices</a></li>
-        <li class="active">Sub Categories</li>
+        <li class="active">Office Automation Provision</li>
     </ol>
 </div>
 
@@ -23,9 +23,9 @@
 
     <!-- Categories -->
     <div class="categories categories-list">
-        <div class="title">Sub Categories</div>
+        <div class="title">Office Automation Provision</div>
         <div class="row row-eq-height">
-            {% for n in [{img:'Office_Automation_Provision', title:'Office Automation Provision'}, {img:'Assets_Movement_Request', title:'Assets Movement Request'}, {img:'Assets_Objection_Request', title:'Assets Objection Request'}, {img:'Assets_Disposal', title:'Assets Disposal'}] %}
+            {% for n in [{img:'Personal_Assets_Provision', title:'Personal Assets Provision'}] %}
                 <div class="col-xs-6 col-sm-4 col-md-5ths">
                     <div class="block border-primary category-box">
                                 
@@ -36,11 +36,36 @@
                         
                         <div class="title-blcok">
                             <div class="img">
-                                <a href="category.html"><img src="images/icons/{{ n.img }}.svg" alt=""></a>
+                                <a href="sub-category.html"><img src="http://www.maxsys.sa/lab/stc/icons/images/{{ n.img }}.svg" alt=""></a>
                             </div>
-                            <h4><a href="category.html">{{ n.title }}</a></h4>
+                            <h4><a href="sub-category.html">{{ n.title }}</a></h4>
                         </div>
                     </div>
+                </div>
+            {% endfor %}
+                    
+            {% for i in [{title: 'Adminstrative Assets Provision', icon: 'Adminstrative_Assets_Provision'}, {title: 'Customers Sales Offices Assets Provision', icon: 'Customers_Sales_Offices_Assets_Provision'}, {title: 'Customers Call Centers Assets Provision', icon: 'Customers_Call_Centers_Assets_Provision'}, {title: 'VDI', icon: 'VDI'}] %}
+                <div class="col-xs-6 col-sm-4 col-md-5ths">
+                    <!-- box -->
+                    <div class="block border-yellow product-box">
+                        
+                        <!-- Info -->
+                        <span class="block-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+                            <img src="images/icons/info.svg" alt="">
+                        </span>
+
+                        <div class="img">
+                            <img src="http://www.maxsys.sa/lab/stc/icons/images/{{ i.icon }}.svg" alt="">
+                        </div>
+                        <h2>{{ i.title }}</h2>
+
+                        <!-- Add to cart -->
+                        <a href="#" class="btn btn-primary cart-add" data-toggle="modal" data-target="#myModal">Add to Cart</a>
+                        <!-- Modal -->
+                        {% include "partials/_cart_modal.html" %}
+
+                    </div>
+                    <!-- end box -->
                 </div>
             {% endfor %}
         </div>

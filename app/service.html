@@ -1,0 +1,90 @@
+<!-- Extend Layout -->
+{% extends "layouts/default.html" %}
+
+<!-- Page Content -->
+{% block content %}
+
+<!-- Breadcrumb -->
+<div class="container">
+    <ol class="breadcrumb">
+        <li>
+            <a href="index.html"><img src="images/bc_home.png" alt=""></a>
+        </li>
+        <li class="active">Services Catalog</li>
+    </ol>
+</div>
+
+<!-- Slider -->
+{% include "partials/slider.html" %}
+
+<!-- Contenet -->
+<div id="container-wrapper" class="container">
+    <div class="row">
+
+        <!-- side container -->
+        <div class="col-xs-12 col-sm-7 col-md-9 side-container">
+
+            <!-- Categories -->
+            <div class="categories">
+                <div class="row row-eq-height">
+                        
+                        {% for i in [
+                            {title: 'Cloud Services & Infrastructures', icon: 'Cloud_Services_and_Infrastructures', link: 'categories2.html'},
+                            {title: 'Desktop Computers & Mobile Devices', icon: 'Desktop_Computers_and_Mobile_Devices', link: 'categories.html'},
+                            {title: 'IT Security & Information Protection', icon: 'IT-Security-and-Information-Protection', link: 'categories3.html'},
+                            {title: 'E-mail, Communications & Collaborations', icon: 'Email_Communications_and_Collaboration'},
+                            {title: 'Networks, Connectivity & WiFi', icon: 'Networks_Connectivity_and_WiFi'},
+                            {title: 'Smart Solutions & Digital Media', icon: 'Smart_Solutions_and_Digital_Media'},
+                            {title: 'Software & Licensing', icon: 'Software_and_Licensing'},
+                            {title: 'Knowledge Management', icon: 'Knowledge_Management'},
+                            {title: 'Patch Management', icon: 'Patch_Management'},
+                            {title: 'Client Management', icon: 'Clients_Management'}] %}
+                        <!-- Category -->
+                        <div class="col-xs-6 col-md-3">
+                            <div class="block border-primary category-box">
+                                
+                                <!-- Info -->
+                                <span class="block-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+                                    <img src="images/icons/info.svg" alt="">
+                                </span>
+
+                                <div class="title-blcok">
+                                    <div class="img">
+                                        {% if i.link %}
+                                            <a href="{{ i.link }}"><img src="http://www.maxsys.sa/lab/stc/icons/images/{{ i.icon }}.svg" alt=""></a>
+                                        {% else %}
+                                            <img src="http://www.maxsys.sa/lab/stc/icons/images/{{ i.icon }}.svg" alt="">
+                                        {% endif %}
+                                    </div>
+                                    {% if i.link %}
+                                        <h4><a href="{{ i.link }}">{{ i.title }}</a></h4>
+                                    {% else %}
+                                        <h4>{{ i.title }}</h4>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Category -->
+                        {% endfor %}
+
+                </div>
+            </div>
+            <!-- End Categories -->
+
+        </div>
+        <!-- end side container -->
+
+        <!-- Sidebar -->
+        <div class="col-xs-12 col-sm-5 col-md-3 sidebar">
+
+            <!-- menu block -->
+            {% include "partials/menu.html" %}
+
+        </div>
+        <!-- End Sidebar -->
+
+    </div>
+</div>
+
+{% endblock %}
+<!-- End Page Content -->

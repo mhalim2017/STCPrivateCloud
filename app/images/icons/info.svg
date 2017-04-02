@@ -1,1 +1,16 @@
-<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g fill="#969696"><path d="M256 0C114.8 0 0 114.8 0 256s114.8 256 256 256 256-114.8 256-256S397.2 0 256 0zm0 480.5C132.2 480.5 31.5 379.8 31.5 256S132.2 31.5 256 31.5 480.5 132.2 480.5 256 379.8 480.5 256 480.5z"/><circle cx="260.1" cy="153.9" r="26.3"/><path d="M253.1 223.2c-8.7 0-15.8 7.1-15.8 15.8v133.9c0 8.7 7.1 15.8 15.8 15.8 8.7 0 15.8-7.1 15.8-15.8V239c0-8.7-7.1-15.8-15.8-15.8z"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#969696;}
+</style>
+<symbol  id="a" viewBox="-32 -32 64 64">
+	<path class="st0" d="M22.6,22.6C16.4,28.9,8.2,32,0,32s-16.4-3.1-22.6-9.4c-12.5-12.5-12.5-32.8,0-45.3C-16.4-28.9-8.2-32,0-32
+		s16.4,3.1,22.6,9.4C35.1-10.1,35.1,10.1,22.6,22.6z M19.1-19.1C14-24.2,7.2-27,0-27s-14,2.8-19.1,7.9c-10.5,10.5-10.5,27.7,0,38.2
+		C-14,24.2-7.2,27,0,27s14-2.8,19.1-7.9v0C24.2,14,27,7.2,27,0C27-7.2,24.2-14,19.1-19.1z"/>
+	<path class="st0" d="M0,17c-2.6,0-4.7-2.1-4.7-4.7S-2.6,7.6,0,7.6c2.6,0,4.7,2.1,4.7,4.7S2.6,17,0,17z"/>
+	<polygon class="st0" points="-4.3,-17 4.3,-17 4.3,4.1 -4.3,4.1 	"/>
+</symbol>
+<use xlink:href="#a"  width="64" height="64" id="XMLID_1_" x="-32" y="-32" transform="matrix(2.3438 0 0 -2.3438 75 74.9977)" style="overflow:visible;"/>
+</svg>

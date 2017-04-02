@@ -45,9 +45,9 @@
 	    <div class="collapse navbar-collapse">
 	    	<ul class="nav navbar-nav" id="main-menu">
 	            <li>
-	            	<a href="#">
+	            	<a href="service.html">
 	            		<img src="images/icons/service.svg" alt="">
-	            		Service
+	            		Services Catalog
 	            	</a>
 	            </li>
 	            <li>
@@ -114,10 +114,10 @@
 		<li class="no-link dropdown-header main-menu visible-xs">Main Menu</li>
 		<li class="no-link dropdown-header cart-menu visible-xs">Cart</li>
 		<li class="no-link dropdown-header other-menu visible-xs">Other</li>
-		<li><a href="#">About</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="#">About</a></li>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="requests.html">Requests</a></li>
+		<li><a href="approvals.html">Approvals</a></li>
+		<li><a href="vm.html">Virtual Machines</a></li>
     </ul>
 </nav>
 <!-- End Sidebar Menu --> 
@@ -132,7 +132,7 @@
             <a href="index.html"><img src="images/bc_home.png" alt=""></a>
         </li>
         <li><a href="categories.html">Desktop Computers & Mobile Devices</a></li>
-        <li class="active">Sub Categories</li>
+        <li class="active">Office Automation Provision</li>
     </ol>
 </div>
 
@@ -215,7 +215,7 @@
 
     <!-- Categories -->
     <div class="categories categories-list">
-        <div class="title">Sub Categories</div>
+        <div class="title">Office Automation Provision</div>
         <div class="row row-eq-height">
             
                 <div class="col-xs-6 col-sm-4 col-md-5ths">
@@ -228,62 +228,417 @@
                         
                         <div class="title-blcok">
                             <div class="img">
-                                <a href="category.html"><img src="images/icons/Office_Automation_Provision.svg" alt=""></a>
+                                <a href="sub-category.html"><img src="http://www.maxsys.sa/lab/stc/icons/images/Personal_Assets_Provision.svg" alt=""></a>
                             </div>
-                            <h4><a href="category.html">Office Automation Provision</a></h4>
+                            <h4><a href="sub-category.html">Personal Assets Provision</a></h4>
                         </div>
                     </div>
                 </div>
             
+                    
+            
                 <div class="col-xs-6 col-sm-4 col-md-5ths">
-                    <div class="block border-primary category-box">
-                                
+                    <!-- box -->
+                    <div class="block border-yellow product-box">
+                        
                         <!-- Info -->
                         <span class="block-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
                             <img src="images/icons/info.svg" alt="">
                         </span>
-                        
-                        <div class="title-blcok">
-                            <div class="img">
-                                <a href="category.html"><img src="images/icons/Assets_Movement_Request.svg" alt=""></a>
-                            </div>
-                            <h4><a href="category.html">Assets Movement Request</a></h4>
+
+                        <div class="img">
+                            <img src="http://www.maxsys.sa/lab/stc/icons/images/Adminstrative_Assets_Provision.svg" alt="">
                         </div>
+                        <h2>Adminstrative Assets Provision</h2>
+
+                        <!-- Add to cart -->
+                        <a href="#" class="btn btn-primary cart-add" data-toggle="modal" data-target="#myModal">Add to Cart</a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="vm.html" id="activate_checkout" class="stc-forms checkout-form">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+								    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+								    	Data
+								    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								    	<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+								    </a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+					                <div class="form-group">
+				                        <div class="title-group">
+				                            <label for="text_input">Input</label>
+				                            <!-- Info -->
+				                            <span class="title-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+				                                <img src="images/icons/info.svg" alt="">
+				                            </span>
+				                        </div>
+					                    <input type="text" value="predefined data" class="form-control" placeholder="Input">
+					                </div>
+					                <div class="form-group">
+					                    <label for="text_input2">Input 2</label>
+					                    <input type="text" value="predefined data" class="form-control" placeholder="Input 2">
+					                </div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+										Data
+								    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								    	<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+					                <div class="form-group">
+				                        <div class="title-group">
+				                            <label for="text_input">Input</label>
+				                            <!-- Info -->
+				                            <span class="title-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+				                                <img src="images/icons/info.svg" alt="">
+				                            </span>
+				                        </div>
+					                    <input type="text" class="form-control" id="text_input" placeholder="Input">
+					                </div>
+					                <div class="form-group">
+					                    <label for="text_input2">Input 2</label>
+					                    <input type="text" class="form-control" id="text_input2" placeholder="Input 2">
+					                </div>
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary pull-right cart-checkout" disabled>Checkout</button>
+                    <a href="#" class="btn btn-primary pull-right cart-add">Add to Cart</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
                     </div>
+                    <!-- end box -->
                 </div>
             
                 <div class="col-xs-6 col-sm-4 col-md-5ths">
-                    <div class="block border-primary category-box">
-                                
+                    <!-- box -->
+                    <div class="block border-yellow product-box">
+                        
                         <!-- Info -->
                         <span class="block-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
                             <img src="images/icons/info.svg" alt="">
                         </span>
-                        
-                        <div class="title-blcok">
-                            <div class="img">
-                                <a href="category.html"><img src="images/icons/Assets_Objection_Request.svg" alt=""></a>
-                            </div>
-                            <h4><a href="category.html">Assets Objection Request</a></h4>
+
+                        <div class="img">
+                            <img src="http://www.maxsys.sa/lab/stc/icons/images/Customers_Sales_Offices_Assets_Provision.svg" alt="">
                         </div>
+                        <h2>Customers Sales Offices Assets Provision</h2>
+
+                        <!-- Add to cart -->
+                        <a href="#" class="btn btn-primary cart-add" data-toggle="modal" data-target="#myModal">Add to Cart</a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="vm.html" id="activate_checkout" class="stc-forms checkout-form">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+								    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+								    	Data
+								    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								    	<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+								    </a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+					                <div class="form-group">
+				                        <div class="title-group">
+				                            <label for="text_input">Input</label>
+				                            <!-- Info -->
+				                            <span class="title-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+				                                <img src="images/icons/info.svg" alt="">
+				                            </span>
+				                        </div>
+					                    <input type="text" value="predefined data" class="form-control" placeholder="Input">
+					                </div>
+					                <div class="form-group">
+					                    <label for="text_input2">Input 2</label>
+					                    <input type="text" value="predefined data" class="form-control" placeholder="Input 2">
+					                </div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+										Data
+								    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								    	<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+					                <div class="form-group">
+				                        <div class="title-group">
+				                            <label for="text_input">Input</label>
+				                            <!-- Info -->
+				                            <span class="title-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+				                                <img src="images/icons/info.svg" alt="">
+				                            </span>
+				                        </div>
+					                    <input type="text" class="form-control" id="text_input" placeholder="Input">
+					                </div>
+					                <div class="form-group">
+					                    <label for="text_input2">Input 2</label>
+					                    <input type="text" class="form-control" id="text_input2" placeholder="Input 2">
+					                </div>
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary pull-right cart-checkout" disabled>Checkout</button>
+                    <a href="#" class="btn btn-primary pull-right cart-add">Add to Cart</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
                     </div>
+                    <!-- end box -->
                 </div>
             
                 <div class="col-xs-6 col-sm-4 col-md-5ths">
-                    <div class="block border-primary category-box">
-                                
+                    <!-- box -->
+                    <div class="block border-yellow product-box">
+                        
                         <!-- Info -->
                         <span class="block-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
                             <img src="images/icons/info.svg" alt="">
                         </span>
-                        
-                        <div class="title-blcok">
-                            <div class="img">
-                                <a href="category.html"><img src="images/icons/Assets_Disposal.svg" alt=""></a>
-                            </div>
-                            <h4><a href="category.html">Assets Disposal</a></h4>
+
+                        <div class="img">
+                            <img src="http://www.maxsys.sa/lab/stc/icons/images/Customers_Call_Centers_Assets_Provision.svg" alt="">
                         </div>
+                        <h2>Customers Call Centers Assets Provision</h2>
+
+                        <!-- Add to cart -->
+                        <a href="#" class="btn btn-primary cart-add" data-toggle="modal" data-target="#myModal">Add to Cart</a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="vm.html" id="activate_checkout" class="stc-forms checkout-form">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+								    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+								    	Data
+								    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								    	<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+								    </a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+					                <div class="form-group">
+				                        <div class="title-group">
+				                            <label for="text_input">Input</label>
+				                            <!-- Info -->
+				                            <span class="title-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+				                                <img src="images/icons/info.svg" alt="">
+				                            </span>
+				                        </div>
+					                    <input type="text" value="predefined data" class="form-control" placeholder="Input">
+					                </div>
+					                <div class="form-group">
+					                    <label for="text_input2">Input 2</label>
+					                    <input type="text" value="predefined data" class="form-control" placeholder="Input 2">
+					                </div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+										Data
+								    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								    	<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+					                <div class="form-group">
+				                        <div class="title-group">
+				                            <label for="text_input">Input</label>
+				                            <!-- Info -->
+				                            <span class="title-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+				                                <img src="images/icons/info.svg" alt="">
+				                            </span>
+				                        </div>
+					                    <input type="text" class="form-control" id="text_input" placeholder="Input">
+					                </div>
+					                <div class="form-group">
+					                    <label for="text_input2">Input 2</label>
+					                    <input type="text" class="form-control" id="text_input2" placeholder="Input 2">
+					                </div>
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary pull-right cart-checkout" disabled>Checkout</button>
+                    <a href="#" class="btn btn-primary pull-right cart-add">Add to Cart</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
                     </div>
+                    <!-- end box -->
+                </div>
+            
+                <div class="col-xs-6 col-sm-4 col-md-5ths">
+                    <!-- box -->
+                    <div class="block border-yellow product-box">
+                        
+                        <!-- Info -->
+                        <span class="block-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+                            <img src="images/icons/info.svg" alt="">
+                        </span>
+
+                        <div class="img">
+                            <img src="http://www.maxsys.sa/lab/stc/icons/images/VDI.svg" alt="">
+                        </div>
+                        <h2>VDI</h2>
+
+                        <!-- Add to cart -->
+                        <a href="#" class="btn btn-primary cart-add" data-toggle="modal" data-target="#myModal">Add to Cart</a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="vm.html" id="activate_checkout" class="stc-forms checkout-form">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+								    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+								    	Data
+								    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								    	<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+								    </a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+					                <div class="form-group">
+				                        <div class="title-group">
+				                            <label for="text_input">Input</label>
+				                            <!-- Info -->
+				                            <span class="title-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+				                                <img src="images/icons/info.svg" alt="">
+				                            </span>
+				                        </div>
+					                    <input type="text" value="predefined data" class="form-control" placeholder="Input">
+					                </div>
+					                <div class="form-group">
+					                    <label for="text_input2">Input 2</label>
+					                    <input type="text" value="predefined data" class="form-control" placeholder="Input 2">
+					                </div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+										Data
+								    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								    	<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+					                <div class="form-group">
+				                        <div class="title-group">
+				                            <label for="text_input">Input</label>
+				                            <!-- Info -->
+				                            <span class="title-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+				                                <img src="images/icons/info.svg" alt="">
+				                            </span>
+				                        </div>
+					                    <input type="text" class="form-control" id="text_input" placeholder="Input">
+					                </div>
+					                <div class="form-group">
+					                    <label for="text_input2">Input 2</label>
+					                    <input type="text" class="form-control" id="text_input2" placeholder="Input 2">
+					                </div>
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary pull-right cart-checkout" disabled>Checkout</button>
+                    <a href="#" class="btn btn-primary pull-right cart-add">Add to Cart</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+                    </div>
+                    <!-- end box -->
                 </div>
             
         </div>

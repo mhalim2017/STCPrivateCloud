@@ -31,6 +31,17 @@
             <div class="categories">
                 <div class="row row-eq-height">
                         
+                        {% for i in [
+                            {title: 'Cloud Services & Infrastructures', icon: 'Cloud_Services_and_Infrastructures', link: 'categories2.html'},
+                            {title: 'Desktop Computers & Mobile Devices', icon: 'Desktop_Computers_and_Mobile_Devices', link: 'categories.html'},
+                            {title: 'IT Security', icon: 'IT-Security-and-Information-Protection', link: 'categories3.html'},
+                            {title: 'E-mail, Communications & Collaborations', icon: 'Email_Communications_and_Collaboration'},
+                            {title: 'Networks, Connectivity & WiFi', icon: 'Networks_Connectivity_and_WiFi'},
+                            {title: 'Smart Solutions & Digital Media', icon: 'Smart_Solutions_and_Digital_Media'},
+                            {title: 'Software & Licensing', icon: 'Software_and_Licensing'},
+                            {title: 'Knowledge Management', icon: 'Knowledge_Management'},
+                            {title: 'Patch Management', icon: 'Patch_Management'},
+                            {title: 'Client Management', icon: 'Clients_Management'}] %}
                         <!-- Category -->
                         <div class="col-xs-6 col-md-3">
                             <div class="block border-primary category-box">
@@ -42,66 +53,17 @@
 
                                 <div class="title-blcok">
                                     <div class="img">
-                                        <a href="categories2.html"><img src="images/icons/coud_services_and_infrastructures.svg" alt=""></a>
+                                        {% if i.link %}
+                                            <a href="{{ i.link }}"><img src="http://www.maxsys.sa/lab/stc/icons/images/{{ i.icon }}.svg" alt=""></a>
+                                        {% else %}
+                                            <img src="http://www.maxsys.sa/lab/stc/icons/images/{{ i.icon }}.svg" alt="">
+                                        {% endif %}
                                     </div>
-                                    <h4><a href="categories2.html">Cloud Services & Infrastructures</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Category -->
-                        
-                        <!-- Category -->
-                        <div class="col-xs-6 col-md-3">
-                            <div class="block border-primary category-box">
-                                
-                                <!-- Info -->
-                                <span class="block-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
-                                    <img src="images/icons/info.svg" alt="">
-                                </span>
-
-                                <div class="title-blcok">
-                                    <div class="img">
-                                        <a href="categories.html"><img src="images/icons/desktop_computers_and_mobile_devices.svg" alt=""></a>
-                                    </div>
-                                    <h4><a href="categories.html">Desktop Computers & Mobile Devices</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Category -->
-                        
-                        <!-- Category -->
-                        <div class="col-xs-6 col-md-3">
-                            <div class="block border-primary category-box">
-                                
-                                <!-- Info -->
-                                <span class="block-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
-                                    <img src="images/icons/info.svg" alt="">
-                                </span>
-
-                                <div class="title-blcok">
-                                    <div class="img">
-                                        <a href="categories3.html"><img src="images/icons/IT-Security-and-Information-Protection.svg" alt=""></a>
-                                    </div>
-                                    <h4><a href="categories3.html">IT Security & Information Protection</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Category -->
-                        
-                        {% for i in [1, 2, 3, 4, 5, 6, 7, 8, 9] %}
-                        <!-- Category -->
-                        <div class="col-xs-6 col-md-3">
-                            <div class="block border-primary category-box no-title">
-                                
-                                <!-- Info -->
-                                <span class="block-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
-                                    <img src="images/icons/info.svg" alt="">
-                                </span>
-                                
-                                <div class="title-blcok">
-                                    <div class="img">
-                                        <a href="#"><img src="images/icons/qm.svg" alt=""></a>
-                                    </div>
+                                    {% if i.link %}
+                                        <h4><a href="{{ i.link }}">{{ i.title }}</a></h4>
+                                    {% else %}
+                                        <h4>{{ i.title }}</h4>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>

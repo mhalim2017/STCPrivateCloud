@@ -58,7 +58,7 @@ var slider_carousel = {
     loop:true,
     margin:25,
     autoplay:true,
-    dots:false,
+    dots:true,
     autoWidth:true,
     responsive:{
         0: {
@@ -90,6 +90,10 @@ $('#activate_checkout input').on('change paste keyup', function(){
     if ($('#text_input').val().length !== 0 && $('#text_input2').val().length !== 0) {
         $('#activate_checkout .cart-checkout').attr('disabled', false);
     }
+});
+$('#activate_checkout .cart-add').on('click', function(e){
+    e.preventDefault();
+    location.reload();
 });
 
 // table row link

@@ -19,33 +19,49 @@
 
 <!-- Contenet -->
 <div id="container-wrapper" class="container">
+    <div class="row">
 
-    <!-- Categories -->
-    <div class="categories categories-list">
-        <div class="title">Desktop Computers & Mobile Devices</div>
-        <div class="row row-eq-height">
-            {% for n in [{img:'Office_Automation_Provision', title:'Office Automation Provision', link:'category.html'}, {img:'Assets_Movement_Request', title:'Assets Movement Request', link:'category.html'}, {img:'Assets_Objection_Request', title:'Assets Objection Request', link:'category.html'}, {img:'Assets_Disposal', title:'Assets Disposal', link:'category.html'}, {img:'Office_Automation_Provision', title:'Sub Categories', link:'sub-categories.html'}] %}
-                <div class="col-xs-6 col-sm-4 col-md-5ths">
-                    <div class="block border-primary category-box">
+        <!-- side container -->
+        <div class="col-xs-12 col-sm-7 col-md-9 side-container">
+
+            <!-- Categories -->
+            <div class="categories categories-list">
+                <div class="title">Desktop Computers & Mobile Devices</div>
+                <div class="row row-eq-height">
+                    {% for n in [{img:'Office_Automation_Provision', title:'Office Automation Provision', link:'sub-categories.html'}, {img:'Assets_Movement_Request', title:'Assets Movement Request', link:'category.html'}, {img:'Assets_Objection_Request', title:'Assets Objection Request', link:'category.html'}, {img:'Assets_Disposal', title:'Assets Disposal', link:'category.html'}] %}
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="block border-primary category-box">
+                                        
+                                <!-- Info -->
+                                <span class="block-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+                                    <img src="images/icons/info.svg" alt="">
+                                </span>
                                 
-                        <!-- Info -->
-                        <span class="block-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
-                            <img src="images/icons/info.svg" alt="">
-                        </span>
-                        
-                        <div class="title-blcok">
-                            <div class="img">
-                                <a href="{{ n.link }}"><img src="images/icons/{{ n.img }}.svg" alt=""></a>
+                                <div class="title-blcok">
+                                    <div class="img">
+                                        <a href="{{ n.link }}"><img src="http://www.maxsys.sa/lab/stc/icons/images/{{ n.img }}.svg" alt=""></a>
+                                    </div>
+                                    <h4><a href="{{ n.link }}">{{ n.title }}</a></h4>
+                                </div>
                             </div>
-                            <h4><a href="{{ n.link }}">{{ n.title }}</a></h4>
                         </div>
-                    </div>
+                    {% endfor %}
                 </div>
-            {% endfor %}
-        </div>
-    </div>
-    <!-- End Categories -->
+            </div>
+            <!-- End Categories -->
 
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-xs-12 col-sm-5 col-md-3 sidebar">
+
+            <!-- menu block -->
+            {% include "partials/menu.html" %}
+
+        </div>
+        <!-- End Sidebar -->
+
+    </div>
 </div>
 
 {% endblock %}
