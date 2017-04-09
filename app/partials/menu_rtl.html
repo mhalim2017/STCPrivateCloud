@@ -1,0 +1,26 @@
+<div class="block border-primary information-block">
+    <div class="block-body">
+        <ul class="list-group">
+            {% for i in [
+                {title: 'Popular items', icon: 'Cloud_Services_and_Infrastructures', link: 'popular-items_rtl.html'},
+                {title: 'Cloud Services & Infrastructures', icon: 'Cloud_Services_and_Infrastructures', link: 'categories2_rtl.html'},
+                {title: 'Desktop Computers & Mobile Devices', icon: 'Desktop_Computers_and_Mobile_Devices', link: 'categories_rtl.html'},
+                {title: 'IT Security', icon: 'IT-Security-and-Information-Protection', link: 'categories3_rtl.html'},
+                {title: 'E-mail, Communications & Collaborations', icon: 'Email_Communications_and_Collaboration'},
+                {title: 'Networks, Connectivity & WiFi', icon: 'Networks_Connectivity_and_WiFi'},
+                {title: 'Smart Solutions & Digital Media', icon: 'Smart_Solutions_and_Digital_Media'},
+                {title: 'Software & Licensing', icon: 'Software_and_Licensing'},
+                {title: 'Knowledge Management', icon: 'Knowledge_Management'},
+                {title: 'Patch Management', icon: 'Patch_Management'},
+                {title: 'Client Management', icon: 'Clients_Management'}] %}
+            <li class="list-group-item">
+                {% if i.link %}
+                    <a href="{{ i.link }}">{{ i.title }}</a>
+                {% else %}
+                    {{ i.title }}
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

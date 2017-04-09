@@ -1,0 +1,80 @@
+<!-- Extend Layout -->
+{% extends "layouts/rtl.html" %}
+
+<!-- Page Content -->
+{% block content %}
+
+<!-- Breadcrumb -->
+<div class="container">
+    <ol class="breadcrumb">
+        <li>
+            <a href="index_rtl.html"><img src="images/bc_home.png" alt=""></a>
+        </li>
+        <li><a href="categories2_rtl.html">Cloud Services & Infrastructures</a></li>
+        <li class="active">IaaS</li>
+    </ol>
+</div>
+
+<!-- Category -->
+<div id="container-wrapper" class="container">
+
+    <div class="go-back">
+        <a href="categories2_rtl.html"></a>
+    </div>
+
+    <!-- Categories -->
+    <div class="categories category-items">
+        <div class="row">
+
+            <!-- Category Info -->
+            <div class="col-md-3 hidden-xs hidden-sm info-block">
+                <div class="block border-primary category-box">
+                    <div class="title-blcok">
+                        <div class="img">
+                            <img src="http://www.maxsys.sa/lab/stc/icons/images/Iaas.svg" alt="">
+                        </div>
+                        <h1>IaaS</h1>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Items -->
+            <div class="col-xs-12 col-md-9">
+                <div class="row row-eq-height">
+                    
+                    {% for i in [{title: 'Windows 2012 R2 VM', icon: 'Windows_2012_R2_VM'}, {title: 'Redhat 6.5 VM', icon: 'Redhat_6.5_VM'}, {title: 'Redhat 6.7 VM', icon: 'Redhat_6.5_VM'}, {title: 'Windows 2012 VM', icon: 'Windows_2012_VM'}] %}
+                        <div class="col-xs-6 col-sm-3">
+                            <!-- box -->
+                            <div class="block border-yellow product-box">
+                                
+                                <!-- Info -->
+                                <span class="block-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+                                    <img src="images/icons/info.svg" alt="">
+                                </span>
+
+                                <div class="img">
+                                    <img src="http://www.maxsys.sa/lab/stc/icons/images/{{ i.icon }}.svg" alt="">
+                                </div>
+                                <h2>{{ i.title }}</h2>
+
+                                <!-- Add to cart -->
+                                <a href="#" class="btn btn-primary cart-add" data-toggle="modal" data-target="#myModal">Add to Cart</a>
+                                <!-- Modal -->
+                                {% include "partials/_cart_modal_rtl.html" %}
+
+                            </div>
+                            <!-- end box -->
+                        </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Categories -->
+
+</div>
+
+{% endblock %}
+<!-- End Page Content -->

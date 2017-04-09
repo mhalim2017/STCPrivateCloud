@@ -1,0 +1,80 @@
+<!-- Extend Layout -->
+{% extends "layouts/rtl.html" %}
+
+<!-- Page Content -->
+{% block content %}
+
+<!-- Breadcrumb -->
+<div class="container">
+    <ol class="breadcrumb">
+        <li>
+            <a href="index_rtl.html"><img src="images/bc_home.png" alt=""></a>
+        </li>
+        <li><a href="categories_rtl.html">Desktop Computers & Mobile Devices</a></li>
+        <li class="active">Office Automation Provision</li>
+    </ol>
+</div>
+
+<!-- Category -->
+<div id="container-wrapper" class="container">
+
+    <div class="go-back">
+        <a href="categories_rtl.html"></a>
+    </div>
+
+    <!-- Categories -->
+    <div class="categories category-items">
+        <div class="row">
+
+            <!-- Category Info -->
+            <div class="col-md-3 hidden-xs hidden-sm info-block">
+                <div class="block border-primary category-box">
+                    <div class="title-blcok">
+                        <div class="img">
+                            <img src="http://www.maxsys.sa/lab/stc/icons/images/Office_Automation_Provision.svg" alt="">
+                        </div>
+                        <h1>Office Automation Provision</h1>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Items -->
+            <div class="col-xs-12 col-md-9">
+                <div class="row row-eq-height">
+                    
+                    {% for i in [{title: 'Personal Assets Provision', icon: 'Personal_Assets_Provision'}, {title: 'Adminstrative Assets Provision', icon: 'Adminstrative_Assets_Provision'}, {title: 'Customers Sales Offices Assets Provision', icon: 'Customers_Sales_Offices_Assets_Provision'}, {title: 'Customers Call Centers Assets Provision', icon: 'Customers_Call_Centers_Assets_Provision'}] %}
+                        <div class="col-xs-6 col-sm-3">
+                            <!-- box -->
+                            <div class="block border-yellow product-box">
+                                
+                                <!-- Info -->
+                                <span class="block-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+                                    <img src="images/icons/info.svg" alt="">
+                                </span>
+
+                                <div class="img">
+                                    <img src="http://www.maxsys.sa/lab/stc/icons/images/{{ i.icon }}.svg" alt="">
+                                </div>
+                                <h2>{{ i.title }}</h2>
+
+                                <!-- Add to cart -->
+                                <a href="#" class="btn btn-primary cart-add" data-toggle="modal" data-target="#myModal">Add to Cart</a>
+                                <!-- Modal -->
+                                {% include "partials/_cart_modal_rtl.html" %}
+
+                            </div>
+                            <!-- end box -->
+                        </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Categories -->
+
+</div>
+
+{% endblock %}
+<!-- End Page Content -->

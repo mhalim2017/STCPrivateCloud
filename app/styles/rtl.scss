@@ -1,0 +1,692 @@
+@import 'mixins';
+
+body {
+    font-family: "Tahoma", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    color: #777;
+    background-color: #f4f4f4;
+}
+#wrapper.toggled {
+    padding-left: 0;
+    padding-right: 220px;
+}
+#sidebar-wrapper {
+  left: auto;
+  margin-left: 0;
+  right: 220px;
+  margin-right: -220px;
+}
+.sidebar-nav li:before {
+  left: auto;
+  right: 0;
+}
+#container-wrapper {
+    .side-container {
+        @include breakpoint(sm) {
+            float: left;
+        }
+    }
+    .sidebar {
+        @include breakpoint(sm) {
+            float: right;
+        }
+    }
+    .content-sidebar {
+        @include breakpoint(sm) {
+            float: left;
+        }
+    }
+    .sidebar-small {
+        @include breakpoint(sm) {
+            float: right;
+        }
+    }
+}
+.block {
+    .block-info {
+        left: auto;
+        right: 8px;
+    }
+    .tooltip-inner {
+        text-align: right;
+    }
+    .title {
+        border-left: none;
+        border-right: 3px solid #6f3974;
+        padding-left: 0;
+        padding-right: 10px;
+        &.alt {
+            border-left: none;
+            border-right: 3px solid #d6417b;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        float: right;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-5ths {
+        float: right;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        float: right;
+    }
+}
+
+.go-back {
+    a {
+        float: right;
+    }
+}
+// forms
+.stc-forms {
+    @include breakpoint(sm) {
+        > .row > .col-sm-6:nth-child(even) {
+            padding-left: 0;
+            padding-right: 50px;
+        }
+    }
+    .form-group {
+        .title-group {
+            .title-info {
+                right: auto;
+                left: 0;
+            }
+            .tooltip-inner {
+                text-align: right;
+            }
+        }
+        select {
+            background-image: url(../images/icons/arrow_down.svg);
+            background-position: 20px 15px;
+        }
+    }
+    .attachment-group {
+        label {
+            left: auto;
+            right: 45px;
+        }
+        input[type="file"] {
+            background-position: right 10px;
+        }
+    }
+}
+.stc-navbar {
+    .hamburger {
+        @include breakpoint(only-xs) {
+            right: auto;
+            left: 10px;
+        }
+    }
+    .navbar-brand {
+        margin-left: 0 !important;
+        margin-right: 10px !important;
+        @include breakpoint(sm) {
+            margin-left: 0 !important;
+            margin-right: 60px !important;
+        }
+    }
+
+    #main-menu {
+        margin-left: 0;
+        margin-right: 50px;
+        li {
+            margin-right: 0;
+            margin-left: 20px;
+            &:last-child {
+                margin-left: 0;
+            }
+            a {
+                img {
+                    float: right;
+                    margin-right: 0;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    .navbar-search-form {
+        margin-left: 0;
+        border-left: none;
+        padding-left: 0;
+        margin-right: 13px;
+        border-right: 1px solid #dedede;
+        padding-right: 15px;
+        .search-input {
+            float: right;
+            margin-left: 0;
+            &.active {
+                margin-right: 0;
+                margin-left: 7px;
+            }
+        }
+        .submit-search {
+            float: rght;
+        }
+    }
+
+    #cart-menu {
+        .dropdown {
+            .dropdown-toggle {
+                padding: 10px 25px 0 0;
+                &:after {
+                    left: auto;
+                    right: 0;
+                }
+                .icon {
+                    float: right;
+                }
+                .cart {
+                    float: right;
+                    margin-left: 0;
+                    margin-right: 12px;
+                }
+            }
+            .dropdown-menu {
+                border-radius: 0 5px 5px 5px;
+                &:after {
+                    right: auto;
+                    left: 0;
+                }
+                li {
+                    a {
+                        img {
+                            float: right;
+                            margin-right: 0;
+                            margin-left: 10px;
+                            &.arrow {
+                                float: left;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px){
+    .navbar-left {
+        float: right !important;
+    }
+}
+@media (min-width: 768px){
+    .navbar-right {
+        float: left !important;
+    }
+}
+
+/*------------------------------------------------------------------
+[4. Information Block
+*/
+.information-block {
+
+    .list-group {
+        li {
+            .icon {
+                float: right;
+                margin-right: 0;
+                margin-left: 20px;
+                img {
+                    float: right;
+                }
+                span {
+                    right: auto;
+                    left: -12px;
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------------------
+[5. RequestFeed Block
+*/
+.requestfeed-block {
+    background-position: left 2px;
+    .request-tabs {
+        .nav-tabs {
+            li {
+                margin-right: 0;
+                margin-left: 7px;
+                &:last-child {
+                    margin-left: 0;
+                    @include breakpoint(md) {
+                        float: left;
+                    }
+                }
+            }
+        }
+        .tab-content {
+            .request-box {
+                span.go-link {
+                    float: left;
+                    right: auto;
+                    left: -14px;
+                }
+                a.box-link {
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+    }
+    .view-all {
+        text-align: left;
+    }
+}
+
+/*------------------------------------------------------------------
+[6. Welcome Block
+*/
+.welcome-block {
+    background-position: left -7px;
+    .dismiss {
+        right: auto;
+        left: 10px;
+    }
+}
+
+/*------------------------------------------------------------------
+[7. Categories Block
+*/
+.categories {
+    .view-all {
+        right: auto;
+        left: 0;
+    }
+    .owl-nav {
+        right: auto;
+        left: 70px;
+        .owl-next, .owl-prev {
+            float: right;
+        }
+    }
+}
+
+/*------------------------------------------------------------------
+[8. Footer
+*/
+footer {
+    text-align: right;
+    .container {
+        background-position: left;
+    }
+}
+
+/*------------------------------------------------------------------
+[9. Breadcrumb
+*/
+.breadcrumb {
+    li:first-child {
+        margin-right: 0;
+        margin-left: 7px;
+    }
+}
+
+/*------------------------------------------------------------------
+[11. Product Box
+*/
+.product-box {
+    > .cart-add {
+        left: auto;
+        right: 3%;
+    }
+    .modal {
+        text-align: right;
+        .panel-heading {
+            .panel-title {
+                a {
+                    span {
+                        float: left;
+                    }
+                }
+            }
+        }
+        .cart-checkout {
+            margin-left: 0;
+            margin-right: 10px;
+        }
+    }
+}
+
+/*------------------------------------------------------------------
+[12. Product Details
+*/
+.product-details {
+    .title {
+        padding-right: 0;
+    }
+    .cart-checkout {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}
+
+/*------------------------------------------------------------------
+[13. Cart Page
+*/
+.cart-page {
+    background-position: left 16px;
+    .cart-item {
+        .details {
+            @include breakpoint(sm) {
+                float: right;
+                text-align: right;
+            }
+            img {
+                margin-right: 0;
+                margin-left: 5px;
+            }
+        }
+        .controls {
+            text-align: center;
+            @include breakpoint(sm) {
+                float: left;
+            }
+            .trash {
+                @include breakpoint(sm) {
+                    right: auto;
+                    left: 15px;
+                }
+            }
+            .btn-details {
+                @include breakpoint(sm) {
+                    float: right;
+                    margin-right: 10px;
+                    margin-left: 0;
+                }
+                &.incomplete {
+                    padding-left: 0;
+                    padding-right: 5px;
+                    &:after {
+                        float: left;
+                        margin-left: 7px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .add-to-cart {
+                button {
+                    float: left;
+                    border-radius: 5px 0 0 5px;
+                    &.remove {
+                        border-radius: 0 5px 5px 0;
+                    }
+                }
+                input {
+                    float: left;
+                }
+                @include breakpoint(sm) {
+                    float: right;
+                }
+                button {
+                    float: left;
+                }
+                input {
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------------------
+[14. Request Details Page
+*/
+.request-details-page {
+    background-position: left 16px;
+}
+
+/*------------------------------------------------------------------
+[15. VM Page
+*/
+.vm-page {
+    background-position: left 0px;
+    .tools {
+        .btn-export {
+            float: left;
+        }
+        .search-form {
+            float: left;
+            margin-left: 0;
+            margin-right: 9px;
+            .submit-search {
+                float: left;
+                border-radius: 5px 0 0 5px;
+            }
+            .search-input {
+                float: right;
+                padding-left: 0;
+                padding-right: 9px;
+                border-radius: 0 5px 5px 0;
+            }
+        }
+    }
+    @include breakpoint(sm) {
+        h1 {
+            float: right;
+        }
+        .tools {
+            float: left;
+            margin-right: 0;
+            margin-left: 145px;
+        }
+    }
+}
+
+/*------------------------------------------------------------------
+[16. VM Details Wrapper
+*/
+.vm-details-wrapper {
+    .full-width {
+        @include breakpoint(sm) {
+            div.title {
+                h1 {
+                    float: right;
+                }
+                span {
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------------------
+[17. Requests Page
+*/
+.requests-page {
+    background-position: left 20px;
+}
+
+/*------------------------------------------------------------------
+[18. Requests Details
+*/
+.request-sidebar {
+    .block {
+        h4 {
+            border-left: none;
+            border-right: 3px solid #6f3974;
+            padding-left: 0;
+            padding-right: 7px;
+        }
+        ul.attachments {
+            li {
+                background-position: calc(100% - 10px) center;
+                a.downlaod {
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+.request-details-content {
+    .request-details {
+        ul.steps {
+            li {
+                float: right;
+                a {
+                    padding-right: 0;
+                    padding-left: 10px;
+                    &:after {
+                        padding-left: 0;
+                        padding-right: 10px;
+                    }
+                }
+                @include breakpoint(sm) {
+                    a {
+                        &:before, &:after {
+                            border-left: none;
+                            border-right: 12px solid #da94af;
+                            right: auto;
+                            left: -12px;
+                        }
+                        &:after {
+                            border-left: none;
+                            border-right: 12px solid #FFF;
+                            right: auto;
+                            left: -13px;
+                        }
+                    }
+                    &.active {
+                        a {
+                            &:before {
+                                border-left: none;
+                                border-right: 12px solid #d8417b;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        > div.details {
+            .show-details {
+                img {
+                    margin-right: 0;
+                    margin-left: 5px;
+                }
+            }
+        }
+        
+        .request-timeline {
+            form.send-message {
+                .submit-message {
+                    float: left;
+                }
+                .message-input {
+                    float: right;
+                    padding-left: 0;
+                    padding-right: 9px;
+                }
+            }
+            ul.timeline {
+                &:before {
+                    left: auto;
+                    right: calc(50% - 2px);
+                }
+                li {
+                    &.status-block {
+                        .details {
+                            float: right;
+                            text-align: right;
+                            .job-time {
+                                float: left;
+                            }
+                        }
+                    }
+                }
+                @include breakpoint(sm) {
+                    &:before {
+                        left: auto;
+                        right: 47px;
+                    }
+                    li {
+                        &.status-block {
+                            .img {
+                                float: right;
+                                margin-right: 6px;
+                                margin-left: 12px;
+                            }
+                            .details {
+                                &:before, &:after {
+                                    border-right: none;
+                                    border-left: 10px solid #FFF;
+                                    left: auto;
+                                    right: -11px;
+                                }
+                                &:after {
+                                    border-right: none;
+                                    border-left: 10px solid #dcdcdc;
+                                    left: auto;
+                                    right: -12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------------------
+[19. Approvals Page
+*/
+.approvals-page {
+    background-position: left 10px;
+    .request-approval {
+
+        .request-info {
+            float: right;
+        }
+        .date {
+            @include breakpoint(sm) {
+                float: left;
+            }
+        }
+
+        form.send-comment {
+            .submit-comment {
+                float: left;
+            }
+            .comment-input {
+                float: right;
+                padding-left: 0;
+                padding-right: 9px;
+            }
+        }
+        .toggle-details {
+            img {
+                margin-right: 0;
+                margin-left: 5px;
+            }
+            @include breakpoint(sm) {
+                float: right;
+            }
+        }
+        .approve-reject {
+            a {
+                padding-left: 0;
+                padding-right: 12px;
+                text-align: right;
+                &.btn-approve {
+                    background-position: 10px;
+                }
+                &.btn-reject {
+                    background-position: 10px;
+                }
+            }
+            @include breakpoint(sm) {
+                float: left;
+            }
+        }
+
+    }
+}

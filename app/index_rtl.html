@@ -1,0 +1,211 @@
+<!-- Extend Layout -->
+{% extends "layouts/rtl.html" %}
+
+<!-- Page Content -->
+{% block content %}
+
+<!-- Slider -->
+{% include "partials/slider.html" %}
+
+<!-- Contenet -->
+<div id="container-wrapper" class="container">
+    <div class="row">
+
+        <!-- side container -->
+        <div class="col-xs-12 col-sm-7 col-md-9 side-container">
+
+            <!-- welcome block -->
+            <div class="alert block welcome-block fade in">
+                <h4 class="title">Why STC IT Private Cloud?</h4>
+                <div class="block-body">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electroni typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like</p>
+                </div>
+                <div class="dismiss">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <img src="images/icons/close.svg" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <!-- Categories -->
+            <div class="categories">
+                <div class="row row-eq-height">
+                        
+                        {% for i in [
+                            {title: 'Cloud Services & Infrastructures', icon: 'Cloud_Services_and_Infrastructures', link: 'categories2_rtl.html'},
+                            {title: 'Desktop Computers & Mobile Devices', icon: 'Desktop_Computers_and_Mobile_Devices', link: 'categories_rtl.html'},
+                            {title: 'IT Security', icon: 'IT-Security-and-Information-Protection', link: 'categories3_rtl.html'},
+                            {title: 'E-mail, Communications & Collaborations', icon: 'Email_Communications_and_Collaboration'},
+                            {title: 'Networks, Connectivity & WiFi', icon: 'Networks_Connectivity_and_WiFi'},
+                            {title: 'Smart Solutions & Digital Media', icon: 'Smart_Solutions_and_Digital_Media'},
+                            {title: 'Software & Licensing', icon: 'Software_and_Licensing'},
+                            {title: 'Knowledge Management', icon: 'Knowledge_Management'},
+                            {title: 'Patch Management', icon: 'Patch_Management'},
+                            {title: 'Client Management', icon: 'Clients_Management'}] %}
+                        <!-- Category -->
+                        <div class="col-xs-6 col-md-3">
+                            <div class="block border-primary category-box">
+                                
+                                <!-- Info -->
+                                <span class="block-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+                                    <img src="images/icons/info.svg" alt="">
+                                </span>
+
+                                <div class="title-blcok">
+                                    <div class="img">
+                                        {% if i.link %}
+                                            <a href="{{ i.link }}"><img src="http://www.maxsys.sa/lab/stc/icons/images/{{ i.icon }}.svg" alt=""></a>
+                                        {% else %}
+                                            <img src="http://www.maxsys.sa/lab/stc/icons/images/{{ i.icon }}.svg" alt="">
+                                        {% endif %}
+                                    </div>
+                                    {% if i.link %}
+                                        <h4><a href="{{ i.link }}">{{ i.title }}</a></h4>
+                                    {% else %}
+                                        <h4>{{ i.title }}</h4>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Category -->
+                        {% endfor %}
+
+                </div>
+            </div>
+            <!-- End Categories -->
+
+        </div>
+        <!-- end side container -->
+
+        <!-- Sidebar -->
+        <div class="col-xs-12 col-sm-5 col-md-3 sidebar">
+
+            <!-- information block -->
+            <div class="block border-primary information-block">
+                <div class="block-body">
+                    <div class="thumb">
+                        <a href="#"><img src="images/test_1.png" alt=""></a>
+                    </div>
+                    <div class="user-name"><a href="#">Abdullah H. H Alotaibi</a></div>
+                    <div class="desc">
+                        Inf/ Automation & Provisiong Services Section Manager
+                    </div>
+                    <div class="desc alt">
+                        Infrastructure Design and Implementation
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="icon">
+                                <img src="images/icons/requests.svg" alt="">
+                                <span class="badge">2</span>
+                            </div>
+                            <a href="requests_rtl.html">Requests</a>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="icon">
+                                <img src="images/icons/approvals.svg" alt="">
+                                <span class="badge">2</span>
+                            </div>
+                            <a href="approvals_rtl.html">Approvals</a>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="icon">
+                                <img src="images/icons/virtual_machines.svg" alt="">
+                                <span class="badge">2</span>
+                            </div>
+                            <a href="vm_rtl.html">Virtual Machines</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end information block -->
+            
+            <!-- requestfeed block -->
+            <div class="block border-alt requestfeed-block">
+                <h4 class="title alt">Request Feed</h4>
+                <div class="block-body">
+
+                    <!-- request tabs -->
+                    <div class="request-tabs">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#pending" aria-controls="pending" role="tab" data-toggle="tab">    Pending
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#sent" aria-controls="sent" role="tab" data-toggle="tab">
+                                    Sent
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#processed" aria-controls="processed" role="tab" data-toggle="tab">
+                                    Processed
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="pending">
+                                <div class="request-box">
+                                    <span class="id">#2921</span>
+                                    <span class="name">Service Name</span>
+                                    <span class="date">2016/12/20 12:43pm</span>
+                                    <span class="go-link">
+                                        <img src="images/icons/arrow_left.svg" alt="">
+                                    </span>
+                                    <a href="requests_details_rtl.html" class="box-link"></a>
+                                </div>
+                                <div class="request-box">
+                                    <span class="id">#2921</span>
+                                    <span class="name">Service Name</span>
+                                    <span class="date">2016/12/20 12:43pm</span>
+                                    <span class="go-link">
+                                        <img src="images/icons/arrow_left.svg" alt="">
+                                    </span>
+                                    <a href="requests_details_rtl.html" class="box-link"></a>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="sent">
+                                <div class="request-box">
+                                    <span class="id">#2921</span>
+                                    <span class="name">Service Name</span>
+                                    <span class="date">2016/12/20 12:43pm</span>
+                                    <span class="go-link">
+                                        <img src="images/icons/arrow_left.svg" alt="">
+                                    </span>
+                                    <a href="requests_details_rtl.html" class="box-link"></a>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="processed">
+                                <div class="request-box">
+                                    <span class="id">#2921</span>
+                                    <span class="name">Service Name</span>
+                                    <span class="date">2016/12/20 12:43pm</span>
+                                    <span class="go-link">
+                                        <img src="images/icons/arrow_left.svg" alt="">
+                                    </span>
+                                    <a href="requests_details_rtl.html" class="box-link"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end request tabs -->
+
+                    <div class="view-all">
+                        <a href="#">View All</a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- end requestfeed block -->
+
+        </div>
+        <!-- End Sidebar -->
+
+    </div>
+</div>
+
+{% endblock %}
+<!-- End Page Content -->

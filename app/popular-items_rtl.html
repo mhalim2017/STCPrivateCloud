@@ -1,0 +1,94 @@
+<!-- Extend Layout -->
+{% extends "layouts/rtl.html" %}
+
+<!-- Page Content -->
+{% block content %}
+
+<!-- Breadcrumb -->
+<div class="container">
+    <ol class="breadcrumb">
+        <li>
+            <a href="index_rtl.html"><img src="images/bc_home.png" alt=""></a>
+        </li>
+        <li class="active">Popular items</li>
+    </ol>
+</div>
+
+<!-- Slider -->
+{% include "partials/slider.html" %}
+
+<!-- Contenet -->
+<div id="container-wrapper" class="container">
+    <div class="row">
+
+        <!-- side container -->
+        <div class="col-xs-12 col-sm-7 col-md-9 side-container">
+
+            <!-- Categories -->
+            <div class="categories categories-list">
+                <div class="title">Popular items</div>
+                <div class="row row-eq-height">
+                    {% for n in [{img:'Personal_Assets_Provision', title:'Personal Assets Provision'}] %}
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="block border-primary category-box">
+                                        
+                                <!-- Info -->
+                                <span class="block-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+                                    <img src="images/icons/info.svg" alt="">
+                                </span>
+                                
+                                <div class="title-blcok">
+                                    <div class="img">
+                                        <a href="sub-category_rtl.html"><img src="http://www.maxsys.sa/lab/stc/icons/images/{{ n.img }}.svg" alt=""></a>
+                                    </div>
+                                    <h4><a href="sub-category_rtl.html">{{ n.title }}</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                            
+                    {% for i in [{title: 'Adminstrative Assets Provision', icon: 'Adminstrative_Assets_Provision'}, {title: 'Customers Sales Offices Assets Provision', icon: 'Customers_Sales_Offices_Assets_Provision'}, {title: 'Customers Call Centers Assets Provision', icon: 'Customers_Call_Centers_Assets_Provision'}, {title: 'VDI', icon: 'VDI'}] %}
+                        <div class="col-xs-6 col-sm-3">
+                            <!-- box -->
+                            <div class="block border-yellow product-box">
+                                
+                                <!-- Info -->
+                                <span class="block-info" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+                                    <img src="images/icons/info.svg" alt="">
+                                </span>
+
+                                <div class="img">
+                                    <img src="http://www.maxsys.sa/lab/stc/icons/images/{{ i.icon }}.svg" alt="">
+                                </div>
+                                <h2>{{ i.title }}</h2>
+
+                                <!-- Add to cart -->
+                                <a href="#" class="btn btn-primary cart-add" data-toggle="modal" data-target="#myModal">Add to Cart</a>
+                                <!-- Modal -->
+                                {% include "partials/_cart_modal_rtl.html" %}
+
+                            </div>
+                            <!-- end box -->
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <!-- End Categories -->
+
+        </div>
+        <!-- end side container -->
+
+        <!-- Sidebar -->
+        <div class="col-xs-12 col-sm-5 col-md-3 sidebar">
+
+            <!-- menu block -->
+            {% include "partials/menu_rtl.html" %}
+
+        </div>
+        <!-- End Sidebar -->
+
+    </div>
+</div>
+
+{% endblock %}
+<!-- End Page Content -->

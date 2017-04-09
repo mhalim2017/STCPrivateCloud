@@ -52,20 +52,38 @@ $('#navbar-search-form .submit-search').on('click', function(e){
 });
 
 // slider
-var slider_carousel = {
-    center: true,
-    items:2,
-    loop:true,
-    margin:25,
-    autoplay:true,
-    dots:true,
-    autoWidth:true,
-    responsive:{
-        0: {
-            items:2
+if ($('body').hasClass('rtl')) {
+    var slider_carousel = {
+        center: true,
+        items:2,
+        loop:true,
+        margin:25,
+        autoplay:true,
+        dots:true,
+        autoWidth:true,
+        rtl:true,
+        responsive:{
+            0: {
+                items:2
+            }
         }
-    }
-};
+    };
+}else {
+    var slider_carousel = {
+        center: true,
+        items:2,
+        loop:true,
+        margin:25,
+        autoplay:true,
+        dots:true,
+        autoWidth:true,
+        responsive:{
+            0: {
+                items:2
+            }
+        }
+    };
+}
 Pace.once('hide', function(){
     $(".slider-carousel").owlCarousel(slider_carousel);
 });

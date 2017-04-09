@@ -1,0 +1,158 @@
+<!-- Extend Layout -->
+{% extends "layouts/rtl.html" %}
+
+<!-- Page Content -->
+{% block content %}
+
+<!-- Breadcrumb -->
+<div class="container">
+    <ol class="breadcrumb">
+        <li>
+            <a href="index_rtl.html"><img src="images/bc_home.png" alt=""></a>
+        </li>
+        <li><a href="vm_rtl.html">My Virtual Machines</a></li>
+        <li class="active">TEST0004</li>
+    </ol>
+</div>
+
+<!-- Container -->
+<div class="container vm-details-wrapper">
+
+    <div class="go-back">
+        <a href="vm_rtl.html"></a>
+    </div>
+
+    <div class="full-width clearfix">
+        
+        <!-- Title -->
+        <div class="title clearfix">
+            <h1>NoApp (RHEL-v6.5-64Bit-v3/ECINAPPTL0667/10.23.50.3)</h1>
+            <span>2017/12/20 12:43pm</span>
+        </div>
+        
+        <table class="table table-striped table-stc-details">
+            <tr>
+                <td>
+                    <span class="title">Application/System Name:</span>
+                    <span class="details">NoApp (RHEL-v6.5-64Bit-v3/ECINAPPTL0667/10.23.50.3)</span>
+                </td>
+                <td>
+                    <span class="title">State:</span>
+                    <span class="details">On</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="title">Environment:</span>
+                    <span class="details">TEST/DEV</span>
+                </td>
+                <td>
+                    <span class="title">Serial number:</span>
+                    <span class="details">500fa7b-48e3-54c 3-ca42-334md3m</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="title">Requestor:</span>
+                    <span class="details">Mohamed A.w Abdelhalim</span>
+                </td>
+                <td>
+                    <span class="title">Host Name:</span>
+                    <span class="details">ECINSAPPT667</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="title">Application/System Owner:</span>
+                    <span class="details">AA BB CC</span>
+                </td>
+                <td>
+                    <span class="title">Operating System:</span>
+                    <span class="details">RHEL-v6.5-64Bit-v3</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="title">Application/System Admin:</span>
+                    <span class="details">AA BB CC</span>
+                </td>
+                <td>
+                    <span class="title">IP:</span>
+                    <span class="details">10.23.50.3</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="title">Technical Expert (Suject Matter Expert):</span>
+                    <span class="details">AA BB CC</span>
+                </td>
+                <td>
+                    <span class="title">Expiration Date:</span>
+                    <span class="details">2017-10-30</span>
+                </td>
+            </tr>
+        </table>
+        
+        <h2>Request Datalis</h2>
+        <table class="table table-striped table-stc-details">
+            <tr>
+                <td>
+                    <span class="title">Request:</span>
+                    <span class="details">TEST0000006</span>
+                </td>
+                <td>
+                    <span class="title">Opened:</span>
+                    <span class="details">2017-08-01 12:12:52pm</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="title">Requsted for:</span>
+                    <span class="details">Mohamed A.w Abdelhalim</span>
+                </td>
+                <td>
+                    <span class="title">Manager:</span>
+                    <span class="details">Bader A.Almazroua</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="title">Approval Date:</span>
+                    <span class="details">2017-08-01 12:12:52pm</span>
+                </td>
+                <td>
+                    <span class="title">Provisioning Date:</span>
+                    <span class="details">2017-08-01 12:12:52pm</span>
+                </td>
+            </tr>
+        </table>
+        
+        <h2>Hardware Datalis</h2>
+        <table class="table table-striped table-stc-details">
+            <tr>
+                <td>
+                    <span class="title">CPUs:</span>
+                    <span class="details">1</span>
+                </td>
+                <td>
+                    <span class="title">Disks:</span>
+                    <span class="details">1</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="title">Memory (GB):</span>
+                    <span class="details">2</span>
+                </td>
+                <td>
+                    <span class="title">Disks size (GB):</span>
+                    <span class="details">60</span>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+
+{% endblock %}
+<!-- End Page Content -->
